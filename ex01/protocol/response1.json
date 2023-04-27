@@ -1,0 +1,1312 @@
+{
+  "took" : 599,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 6,
+    "successful" : 6,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 378,
+      "relation" : "eq"
+    },
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : ".ds-.monitoring-es-8-mb-2023.04.01-000001",
+        "_id" : "0ylXPYcB9lx-7G-1YFdZ",
+        "_score" : 1.0,
+        "_source" : {
+          "@timestamp" : "2023-04-01T15:02:28.196Z",
+          "event" : {
+            "dataset" : "elasticsearch.node.stats",
+            "module" : "elasticsearch",
+            "duration" : 10385250
+          },
+          "metricset" : {
+            "period" : 10000,
+            "name" : "node_stats"
+          },
+          "elasticsearch" : {
+            "node" : {
+              "name" : "elasticsearch",
+              "stats" : {
+                "process" : {
+                  "cpu" : {
+                    "pct" : 3
+                  }
+                },
+                "fs" : {
+                  "io_stats" : {
+                    "total" : {
+                      "operations" : {
+                        "count" : 128241
+                      },
+                      "read" : {
+                        "operations" : {
+                          "count" : 80306
+                        },
+                        "kb" : 1498116
+                      },
+                      "write" : {
+                        "operations" : {
+                          "count" : 47935
+                        },
+                        "kb" : 1226476
+                      }
+                    }
+                  },
+                  "summary" : {
+                    "total" : {
+                      "bytes" : 62725623808
+                    },
+                    "free" : {
+                      "bytes" : 47800659968
+                    },
+                    "available" : {
+                      "bytes" : 44583944192
+                    }
+                  },
+                  "total" : {
+                    "available_in_bytes" : 44583944192,
+                    "total_in_bytes" : 62725623808
+                  }
+                },
+                "indexing_pressure" : {
+                  "memory" : {
+                    "current" : {
+                      "coordinating" : {
+                        "bytes" : 0
+                      },
+                      "replica" : {
+                        "bytes" : 0
+                      },
+                      "combined_coordinating_and_primary" : {
+                        "bytes" : 0
+                      },
+                      "all" : {
+                        "bytes" : 0
+                      },
+                      "primary" : {
+                        "bytes" : 0
+                      }
+                    },
+                    "total" : {
+                      "all" : {
+                        "bytes" : 54977132
+                      },
+                      "primary" : {
+                        "rejections" : 0,
+                        "bytes" : 55058900
+                      },
+                      "coordinating" : {
+                        "rejections" : 0,
+                        "bytes" : 54977132
+                      },
+                      "replica" : {
+                        "bytes" : 0,
+                        "rejections" : 0
+                      },
+                      "combined_coordinating_and_primary" : {
+                        "bytes" : 54977132
+                      }
+                    },
+                    "limit_in_bytes" : 53687091
+                  }
+                },
+                "ingest" : {
+                  "total" : {
+                    "failed" : 0,
+                    "count" : 0,
+                    "time_in_millis" : 0,
+                    "current" : 0
+                  }
+                },
+                "indices" : {
+                  "segments" : {
+                    "count" : 64,
+                    "memory" : {
+                      "bytes" : 0
+                    },
+                    "points" : {
+                      "memory" : {
+                        "bytes" : 0
+                      }
+                    },
+                    "fixed_bit_set" : {
+                      "memory" : {
+                        "bytes" : 2360
+                      }
+                    },
+                    "doc_values" : {
+                      "memory" : {
+                        "bytes" : 0
+                      }
+                    },
+                    "terms" : {
+                      "memory" : {
+                        "bytes" : 0
+                      }
+                    },
+                    "stored_fields" : {
+                      "memory" : {
+                        "bytes" : 0
+                      }
+                    },
+                    "term_vectors" : {
+                      "memory" : {
+                        "bytes" : 0
+                      }
+                    },
+                    "version_map" : {
+                      "memory" : {
+                        "bytes" : 130
+                      }
+                    },
+                    "index_writer" : {
+                      "memory" : {
+                        "bytes" : 1386860
+                      }
+                    },
+                    "norms" : {
+                      "memory" : {
+                        "bytes" : 0
+                      }
+                    }
+                  },
+                  "indexing" : {
+                    "index_time" : {
+                      "ms" : 3123
+                    },
+                    "index_total" : {
+                      "count" : 3019
+                    },
+                    "throttle_time" : {
+                      "ms" : 0
+                    }
+                  },
+                  "docs" : {
+                    "count" : 2129,
+                    "deleted" : 2440
+                  },
+                  "bulk" : {
+                    "avg_time" : {
+                      "ms" : 0
+                    },
+                    "total_size" : {
+                      "bytes" : 54613094
+                    },
+                    "total_time" : {
+                      "ms" : 19502
+                    },
+                    "operations" : {
+                      "total" : {
+                        "count" : 2090
+                      }
+                    },
+                    "avg_size" : {
+                      "bytes" : 21539
+                    }
+                  },
+                  "store" : {
+                    "size" : {
+                      "bytes" : 50979082
+                    }
+                  },
+                  "search" : {
+                    "query_time" : {
+                      "ms" : 4836
+                    },
+                    "query_total" : {
+                      "count" : 3906
+                    }
+                  },
+                  "fielddata" : {
+                    "memory" : {
+                      "bytes" : 0
+                    }
+                  },
+                  "query_cache" : {
+                    "memory" : {
+                      "bytes" : 0
+                    }
+                  },
+                  "request_cache" : {
+                    "memory" : {
+                      "bytes" : 4736
+                    }
+                  }
+                },
+                "os" : {
+                  "cpu" : {
+                    "load_avg" : {
+                      "1m" : 0.1
+                    }
+                  },
+                  "cgroup" : {
+                    "cpuacct" : {
+                      "usage" : {
+                        "ns" : 170611984538
+                      }
+                    },
+                    "cpu" : {
+                      "stat" : {
+                        "elapsed_periods" : {
+                          "count" : 0
+                        },
+                        "times_throttled" : {
+                          "count" : 0
+                        },
+                        "time_throttled" : {
+                          "ns" : 0
+                        }
+                      },
+                      "cfs" : {
+                        "quota" : {
+                          "us" : -1
+                        }
+                      }
+                    },
+                    "memory" : {
+                      "usage" : {
+                        "bytes" : "734855168"
+                      },
+                      "control_group" : "/",
+                      "limit" : {
+                        "bytes" : "9223372036854771712"
+                      }
+                    }
+                  }
+                },
+                "thread_pool" : {
+                  "write" : {
+                    "queue" : {
+                      "count" : 0
+                    },
+                    "rejected" : {
+                      "count" : 0
+                    }
+                  },
+                  "get" : {
+                    "queue" : {
+                      "count" : 0
+                    },
+                    "rejected" : {
+                      "count" : 0
+                    }
+                  },
+                  "search" : {
+                    "rejected" : {
+                      "count" : 0
+                    },
+                    "queue" : {
+                      "count" : 0
+                    }
+                  }
+                },
+                "jvm" : {
+                  "mem" : {
+                    "heap" : {
+                      "max" : {
+                        "bytes" : 536870912
+                      },
+                      "used" : {
+                        "pct" : 34,
+                        "bytes" : 183629088
+                      }
+                    }
+                  },
+                  "gc" : {
+                    "collectors" : {
+                      "old" : {
+                        "collection" : {
+                          "count" : 0,
+                          "ms" : 0
+                        }
+                      },
+                      "young" : {
+                        "collection" : {
+                          "count" : 65,
+                          "ms" : 1122
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "id" : "O-y2qJvWTN6UubXEvVmXDw",
+              "mlockall" : false,
+              "master" : true
+            },
+            "cluster" : {
+              "id" : "PlBN_GfURwyu4ESCiDhDyA",
+              "name" : "docker-cluster"
+            }
+          },
+          "agent" : {
+            "name" : "metricbeat",
+            "type" : "metricbeat",
+            "version" : "8.6.1",
+            "ephemeral_id" : "8ae22226-ecc2-4ee2-b607-13c9eb7c5512",
+            "id" : "66d3e2a9-1d02-4f04-b586-a85ecf5b8133"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "host" : {
+            "name" : "metricbeat"
+          },
+          "service" : {
+            "name" : "elasticsearch",
+            "address" : "http://elasticsearch:9200",
+            "type" : "elasticsearch"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-.monitoring-es-8-mb-2023.04.01-000001",
+        "_id" : "1ClXPYcB9lx-7G-1YFdZ",
+        "_score" : 1.0,
+        "_source" : {
+          "@timestamp" : "2023-04-01T15:02:28.956Z",
+          "service" : {
+            "name" : "elasticsearch",
+            "address" : "http://elasticsearch:9200",
+            "type" : "elasticsearch"
+          },
+          "event" : {
+            "dataset" : "elasticsearch.index.recovery",
+            "module" : "elasticsearch",
+            "duration" : 11764083
+          },
+          "metricset" : {
+            "period" : 10000,
+            "name" : "index_recovery"
+          },
+          "elasticsearch" : {
+            "cluster" : {
+              "id" : "PlBN_GfURwyu4ESCiDhDyA",
+              "name" : "docker-cluster"
+            },
+            "index" : {
+              "recovery" : {
+                "id" : 0,
+                "index" : {
+                  "files" : {
+                    "reused" : 0,
+                    "recovered" : 0,
+                    "total" : 0,
+                    "percent" : "0.0%"
+                  },
+                  "size" : {
+                    "total_in_bytes" : 0,
+                    "recovered_in_bytes" : 0,
+                    "reused_in_bytes" : 0
+                  }
+                },
+                "stop_time" : {
+                  "ms" : 1680361325647
+                },
+                "translog" : {
+                  "total" : 0,
+                  "percent" : "100.0%",
+                  "total_on_start" : 0
+                },
+                "primary" : true,
+                "start_time" : {
+                  "ms" : 1680361325624
+                },
+                "name" : ".monitoring-beats-7-2023.04.01",
+                "stage" : "DONE",
+                "source" : { },
+                "target" : {
+                  "name" : "elasticsearch",
+                  "transport_address" : "172.30.0.2:9300",
+                  "id" : "O-y2qJvWTN6UubXEvVmXDw",
+                  "host" : "172.30.0.2"
+                },
+                "type" : "EMPTY_STORE"
+              },
+              "name" : ".monitoring-beats-7-2023.04.01"
+            }
+          },
+          "host" : {
+            "name" : "metricbeat"
+          },
+          "agent" : {
+            "type" : "metricbeat",
+            "version" : "8.6.1",
+            "ephemeral_id" : "8ae22226-ecc2-4ee2-b607-13c9eb7c5512",
+            "id" : "66d3e2a9-1d02-4f04-b586-a85ecf5b8133",
+            "name" : "metricbeat"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-.monitoring-es-8-mb-2023.04.01-000001",
+        "_id" : "1SlXPYcB9lx-7G-1YFdZ",
+        "_score" : 1.0,
+        "_source" : {
+          "@timestamp" : "2023-04-01T15:02:28.956Z",
+          "service" : {
+            "name" : "elasticsearch",
+            "address" : "http://elasticsearch:9200",
+            "type" : "elasticsearch"
+          },
+          "event" : {
+            "module" : "elasticsearch",
+            "duration" : 11824833,
+            "dataset" : "elasticsearch.index.recovery"
+          },
+          "metricset" : {
+            "name" : "index_recovery",
+            "period" : 10000
+          },
+          "elasticsearch" : {
+            "index" : {
+              "name" : ".ds-metricbeat-8.6.1-2023.04.01-000001",
+              "recovery" : {
+                "index" : {
+                  "size" : {
+                    "recovered_in_bytes" : 0,
+                    "reused_in_bytes" : 0,
+                    "total_in_bytes" : 0
+                  },
+                  "files" : {
+                    "reused" : 0,
+                    "recovered" : 0,
+                    "total" : 0,
+                    "percent" : "0.0%"
+                  }
+                },
+                "name" : ".ds-metricbeat-8.6.1-2023.04.01-000001",
+                "primary" : true,
+                "id" : 0,
+                "stop_time" : {
+                  "ms" : 1680361317371
+                },
+                "start_time" : {
+                  "ms" : 1680361317340
+                },
+                "source" : { },
+                "type" : "EMPTY_STORE",
+                "translog" : {
+                  "total" : 0,
+                  "percent" : "100.0%",
+                  "total_on_start" : 0
+                },
+                "stage" : "DONE",
+                "target" : {
+                  "host" : "172.30.0.2",
+                  "name" : "elasticsearch",
+                  "transport_address" : "172.30.0.2:9300",
+                  "id" : "O-y2qJvWTN6UubXEvVmXDw"
+                }
+              }
+            },
+            "cluster" : {
+              "name" : "docker-cluster",
+              "id" : "PlBN_GfURwyu4ESCiDhDyA"
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "host" : {
+            "name" : "metricbeat"
+          },
+          "agent" : {
+            "id" : "66d3e2a9-1d02-4f04-b586-a85ecf5b8133",
+            "name" : "metricbeat",
+            "type" : "metricbeat",
+            "version" : "8.6.1",
+            "ephemeral_id" : "8ae22226-ecc2-4ee2-b607-13c9eb7c5512"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-.monitoring-es-8-mb-2023.04.01-000001",
+        "_id" : "1ilXPYcB9lx-7G-1YFdZ",
+        "_score" : 1.0,
+        "_source" : {
+          "@timestamp" : "2023-04-01T15:02:28.956Z",
+          "agent" : {
+            "id" : "66d3e2a9-1d02-4f04-b586-a85ecf5b8133",
+            "name" : "metricbeat",
+            "type" : "metricbeat",
+            "version" : "8.6.1",
+            "ephemeral_id" : "8ae22226-ecc2-4ee2-b607-13c9eb7c5512"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "host" : {
+            "name" : "metricbeat"
+          },
+          "metricset" : {
+            "name" : "index_recovery",
+            "period" : 10000
+          },
+          "elasticsearch" : {
+            "cluster" : {
+              "name" : "docker-cluster",
+              "id" : "PlBN_GfURwyu4ESCiDhDyA"
+            },
+            "index" : {
+              "name" : ".ds-.monitoring-es-8-mb-2023.04.01-000001",
+              "recovery" : {
+                "start_time" : {
+                  "ms" : 1680361317498
+                },
+                "id" : 0,
+                "name" : ".ds-.monitoring-es-8-mb-2023.04.01-000001",
+                "stop_time" : {
+                  "ms" : 1680361317522
+                },
+                "primary" : true,
+                "stage" : "DONE",
+                "source" : { },
+                "index" : {
+                  "files" : {
+                    "percent" : "0.0%",
+                    "reused" : 0,
+                    "recovered" : 0,
+                    "total" : 0
+                  },
+                  "size" : {
+                    "recovered_in_bytes" : 0,
+                    "reused_in_bytes" : 0,
+                    "total_in_bytes" : 0
+                  }
+                },
+                "translog" : {
+                  "percent" : "100.0%",
+                  "total_on_start" : 0,
+                  "total" : 0
+                },
+                "target" : {
+                  "id" : "O-y2qJvWTN6UubXEvVmXDw",
+                  "host" : "172.30.0.2",
+                  "name" : "elasticsearch",
+                  "transport_address" : "172.30.0.2:9300"
+                },
+                "type" : "EMPTY_STORE"
+              }
+            }
+          },
+          "service" : {
+            "name" : "elasticsearch",
+            "address" : "http://elasticsearch:9200",
+            "type" : "elasticsearch"
+          },
+          "event" : {
+            "module" : "elasticsearch",
+            "duration" : 11853333,
+            "dataset" : "elasticsearch.index.recovery"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-.monitoring-es-8-mb-2023.04.01-000001",
+        "_id" : "1ylXPYcB9lx-7G-1YFdZ",
+        "_score" : 1.0,
+        "_source" : {
+          "@timestamp" : "2023-04-01T15:02:28.956Z",
+          "agent" : {
+            "id" : "66d3e2a9-1d02-4f04-b586-a85ecf5b8133",
+            "name" : "metricbeat",
+            "type" : "metricbeat",
+            "version" : "8.6.1",
+            "ephemeral_id" : "8ae22226-ecc2-4ee2-b607-13c9eb7c5512"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "host" : {
+            "name" : "metricbeat"
+          },
+          "event" : {
+            "dataset" : "elasticsearch.index.recovery",
+            "module" : "elasticsearch",
+            "duration" : 12029083
+          },
+          "metricset" : {
+            "name" : "index_recovery",
+            "period" : 10000
+          },
+          "elasticsearch" : {
+            "cluster" : {
+              "name" : "docker-cluster",
+              "id" : "PlBN_GfURwyu4ESCiDhDyA"
+            },
+            "index" : {
+              "name" : ".ds-.monitoring-logstash-8-mb-2023.04.01-000001",
+              "recovery" : {
+                "id" : 0,
+                "target" : {
+                  "id" : "O-y2qJvWTN6UubXEvVmXDw",
+                  "host" : "172.30.0.2",
+                  "name" : "elasticsearch",
+                  "transport_address" : "172.30.0.2:9300"
+                },
+                "start_time" : {
+                  "ms" : 1680361318130
+                },
+                "source" : { },
+                "name" : ".ds-.monitoring-logstash-8-mb-2023.04.01-000001",
+                "stage" : "DONE",
+                "stop_time" : {
+                  "ms" : 1680361318158
+                },
+                "primary" : true,
+                "type" : "EMPTY_STORE",
+                "translog" : {
+                  "total" : 0,
+                  "percent" : "100.0%",
+                  "total_on_start" : 0
+                },
+                "index" : {
+                  "files" : {
+                    "percent" : "0.0%",
+                    "reused" : 0,
+                    "recovered" : 0,
+                    "total" : 0
+                  },
+                  "size" : {
+                    "total_in_bytes" : 0,
+                    "recovered_in_bytes" : 0,
+                    "reused_in_bytes" : 0
+                  }
+                }
+              }
+            }
+          },
+          "service" : {
+            "name" : "elasticsearch",
+            "address" : "http://elasticsearch:9200",
+            "type" : "elasticsearch"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-.monitoring-es-8-mb-2023.04.01-000001",
+        "_id" : "2ClXPYcB9lx-7G-1YFdZ",
+        "_score" : 1.0,
+        "_source" : {
+          "@timestamp" : "2023-04-01T15:02:28.956Z",
+          "host" : {
+            "name" : "metricbeat"
+          },
+          "agent" : {
+            "ephemeral_id" : "8ae22226-ecc2-4ee2-b607-13c9eb7c5512",
+            "id" : "66d3e2a9-1d02-4f04-b586-a85ecf5b8133",
+            "name" : "metricbeat",
+            "type" : "metricbeat",
+            "version" : "8.6.1"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "metricset" : {
+            "name" : "index_recovery",
+            "period" : 10000
+          },
+          "event" : {
+            "dataset" : "elasticsearch.index.recovery",
+            "module" : "elasticsearch",
+            "duration" : 12270542
+          },
+          "elasticsearch" : {
+            "cluster" : {
+              "name" : "docker-cluster",
+              "id" : "PlBN_GfURwyu4ESCiDhDyA"
+            },
+            "index" : {
+              "name" : "orders",
+              "recovery" : {
+                "index" : {
+                  "files" : {
+                    "reused" : 0,
+                    "recovered" : 0,
+                    "total" : 0,
+                    "percent" : "0.0%"
+                  },
+                  "size" : {
+                    "recovered_in_bytes" : 0,
+                    "reused_in_bytes" : 0,
+                    "total_in_bytes" : 0
+                  }
+                },
+                "primary" : true,
+                "stage" : "DONE",
+                "stop_time" : {
+                  "ms" : 1680358500813
+                },
+                "start_time" : {
+                  "ms" : 1680358500786
+                },
+                "target" : {
+                  "id" : "O-y2qJvWTN6UubXEvVmXDw",
+                  "host" : "172.30.0.2",
+                  "name" : "elasticsearch",
+                  "transport_address" : "172.30.0.2:9300"
+                },
+                "type" : "EMPTY_STORE",
+                "source" : { },
+                "translog" : {
+                  "total" : 0,
+                  "percent" : "100.0%",
+                  "total_on_start" : 0
+                },
+                "id" : 0,
+                "name" : "orders"
+              }
+            }
+          },
+          "service" : {
+            "name" : "elasticsearch",
+            "address" : "http://elasticsearch:9200",
+            "type" : "elasticsearch"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-.monitoring-es-8-mb-2023.04.01-000001",
+        "_id" : "2SlXPYcB9lx-7G-1YFdZ",
+        "_score" : 1.0,
+        "_source" : {
+          "@timestamp" : "2023-04-01T15:02:28.956Z",
+          "service" : {
+            "name" : "elasticsearch",
+            "address" : "http://elasticsearch:9200",
+            "type" : "elasticsearch"
+          },
+          "event" : {
+            "dataset" : "elasticsearch.index.recovery",
+            "module" : "elasticsearch",
+            "duration" : 12294375
+          },
+          "metricset" : {
+            "name" : "index_recovery",
+            "period" : 10000
+          },
+          "elasticsearch" : {
+            "cluster" : {
+              "id" : "PlBN_GfURwyu4ESCiDhDyA",
+              "name" : "docker-cluster"
+            },
+            "index" : {
+              "name" : ".ds-.monitoring-kibana-8-mb-2023.04.01-000001",
+              "recovery" : {
+                "stage" : "DONE",
+                "type" : "EMPTY_STORE",
+                "primary" : true,
+                "name" : ".ds-.monitoring-kibana-8-mb-2023.04.01-000001",
+                "target" : {
+                  "id" : "O-y2qJvWTN6UubXEvVmXDw",
+                  "host" : "172.30.0.2",
+                  "name" : "elasticsearch",
+                  "transport_address" : "172.30.0.2:9300"
+                },
+                "stop_time" : {
+                  "ms" : 1680361318166
+                },
+                "start_time" : {
+                  "ms" : 1680361318135
+                },
+                "id" : 0,
+                "source" : { },
+                "translog" : {
+                  "percent" : "100.0%",
+                  "total_on_start" : 0,
+                  "total" : 0
+                },
+                "index" : {
+                  "files" : {
+                    "recovered" : 0,
+                    "total" : 0,
+                    "percent" : "0.0%",
+                    "reused" : 0
+                  },
+                  "size" : {
+                    "recovered_in_bytes" : 0,
+                    "reused_in_bytes" : 0,
+                    "total_in_bytes" : 0
+                  }
+                }
+              }
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "host" : {
+            "name" : "metricbeat"
+          },
+          "agent" : {
+            "ephemeral_id" : "8ae22226-ecc2-4ee2-b607-13c9eb7c5512",
+            "id" : "66d3e2a9-1d02-4f04-b586-a85ecf5b8133",
+            "name" : "metricbeat",
+            "type" : "metricbeat",
+            "version" : "8.6.1"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-.monitoring-es-8-mb-2023.04.01-000001",
+        "_id" : "4SlXPYcB9lx-7G-1aldB",
+        "_score" : 1.0,
+        "_source" : {
+          "@timestamp" : "2023-04-01T15:02:30.815Z",
+          "host" : {
+            "name" : "metricbeat"
+          },
+          "agent" : {
+            "version" : "8.6.1",
+            "ephemeral_id" : "8ae22226-ecc2-4ee2-b607-13c9eb7c5512",
+            "id" : "66d3e2a9-1d02-4f04-b586-a85ecf5b8133",
+            "name" : "metricbeat",
+            "type" : "metricbeat"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "service" : {
+            "name" : "elasticsearch",
+            "address" : "http://elasticsearch:9200",
+            "type" : "elasticsearch"
+          },
+          "event" : {
+            "module" : "elasticsearch",
+            "duration" : 8745125,
+            "dataset" : "elasticsearch.index.summary"
+          },
+          "metricset" : {
+            "name" : "index_summary",
+            "period" : 10000
+          },
+          "elasticsearch" : {
+            "cluster" : {
+              "name" : "docker-cluster",
+              "id" : "PlBN_GfURwyu4ESCiDhDyA"
+            },
+            "index" : {
+              "summary" : {
+                "total" : {
+                  "search" : {
+                    "query" : {
+                      "count" : 3,
+                      "time" : {
+                        "ms" : 0
+                      }
+                    }
+                  },
+                  "docs" : {
+                    "count" : 308,
+                    "deleted" : 0
+                  },
+                  "store" : {
+                    "size" : {
+                      "bytes" : 1354413
+                    }
+                  },
+                  "segments" : {
+                    "count" : 28,
+                    "memory" : {
+                      "bytes" : 0
+                    }
+                  },
+                  "indexing" : {
+                    "index" : {
+                      "time" : {
+                        "ms" : 227
+                      },
+                      "count" : 311
+                    }
+                  },
+                  "bulk" : {
+                    "operations" : {
+                      "count" : 65
+                    },
+                    "time" : {
+                      "avg" : {
+                        "bytes" : 8428
+                      }
+                    },
+                    "size" : {
+                      "bytes" : 623144
+                    }
+                  }
+                },
+                "primaries" : {
+                  "docs" : {
+                    "count" : 308,
+                    "deleted" : 0
+                  },
+                  "store" : {
+                    "size" : {
+                      "bytes" : 1354413
+                    }
+                  },
+                  "segments" : {
+                    "count" : 28,
+                    "memory" : {
+                      "bytes" : 0
+                    }
+                  },
+                  "indexing" : {
+                    "index" : {
+                      "time" : {
+                        "ms" : 227
+                      },
+                      "count" : 311
+                    }
+                  },
+                  "bulk" : {
+                    "time" : {
+                      "avg" : {
+                        "bytes" : 8428
+                      }
+                    },
+                    "size" : {
+                      "bytes" : 623144
+                    },
+                    "operations" : {
+                      "count" : 65
+                    }
+                  },
+                  "search" : {
+                    "query" : {
+                      "time" : {
+                        "ms" : 0
+                      },
+                      "count" : 3
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "_index" : ".ds-.monitoring-es-8-mb-2023.04.01-000001",
+        "_id" : "5ClXPYcB9lx-7G-1cVd-",
+        "_score" : 1.0,
+        "_source" : {
+          "@timestamp" : "2023-04-01T15:02:32.569Z",
+          "event" : {
+            "dataset" : "elasticsearch.cluster.stats",
+            "module" : "elasticsearch",
+            "duration" : 56366708
+          },
+          "metricset" : {
+            "name" : "cluster_stats",
+            "period" : 10000
+          },
+          "service" : {
+            "type" : "elasticsearch",
+            "address" : "http://elasticsearch:9200"
+          },
+          "elasticsearch" : {
+            "cluster" : {
+              "name" : "docker-cluster",
+              "id" : "PlBN_GfURwyu4ESCiDhDyA",
+              "stats" : {
+                "status" : "yellow",
+                "nodes" : {
+                  "jvm" : {
+                    "max_uptime" : {
+                      "ms" : 3056383
+                    },
+                    "memory" : {
+                      "heap" : {
+                        "used" : {
+                          "bytes" : 246543648
+                        },
+                        "max" : {
+                          "bytes" : 536870912
+                        }
+                      }
+                    }
+                  },
+                  "versions" : [
+                    "8.6.1"
+                  ],
+                  "count" : 1,
+                  "master" : 1,
+                  "data" : 1,
+                  "fs" : {
+                    "available" : {
+                      "bytes" : 44583763968
+                    },
+                    "total" : {
+                      "bytes" : 62725623808
+                    }
+                  }
+                },
+                "indices" : {
+                  "docs" : {
+                    "total" : 2145
+                  },
+                  "total" : 19,
+                  "shards" : {
+                    "primaries" : 19,
+                    "count" : 19
+                  },
+                  "store" : {
+                    "size" : {
+                      "bytes" : 51353922
+                    }
+                  },
+                  "fielddata" : {
+                    "memory" : {
+                      "bytes" : 0
+                    }
+                  }
+                },
+                "stack" : {
+                  "xpack" : {
+                    "ccr" : {
+                      "available" : true,
+                      "enabled" : true
+                    }
+                  },
+                  "apm" : {
+                    "found" : false
+                  }
+                },
+                "license" : {
+                  "issue_date_in_millis" : 1680358314459,
+                  "issued_to" : "docker-cluster",
+                  "cluster_needs_tls" : true,
+                  "expiry_date" : "2023-05-01T14:11:54.459Z",
+                  "type" : "trial",
+                  "expiry_date_in_millis" : 1682950314459,
+                  "max_nodes" : 1000,
+                  "uid" : "0cd04df8-ca94-4e6d-b44d-f94be69c806d",
+                  "issue_date" : "2023-04-01T14:11:54.459Z",
+                  "issuer" : "elasticsearch",
+                  "start_date_in_millis" : -1,
+                  "status" : "active"
+                },
+                "state" : {
+                  "state_uuid" : "Pvc9WFqhTLCA-uFowXC2kA",
+                  "nodes" : {
+                    "O-y2qJvWTN6UubXEvVmXDw" : {
+                      "roles" : [
+                        "data",
+                        "data_cold",
+                        "data_content",
+                        "data_frozen",
+                        "data_hot",
+                        "data_warm",
+                        "ingest",
+                        "master",
+                        "ml",
+                        "remote_cluster_client",
+                        "transform"
+                      ],
+                      "name" : "elasticsearch",
+                      "ephemeral_id" : "1vH6YUYCSEmVG8C_NhkGyA",
+                      "transport_address" : "172.30.0.2:9300",
+                      "external_id" : "elasticsearch",
+                      "attributes" : {
+                        "ml.machine_memory" : "2085416960",
+                        "ml.allocated_processors" : "4",
+                        "ml.max_jvm_size" : "536870912",
+                        "ml.allocated_processors_double" : "4.0",
+                        "xpack.installed" : "true"
+                      }
+                    }
+                  },
+                  "nodes_hash" : -676423284,
+                  "master_node" : "O-y2qJvWTN6UubXEvVmXDw"
+                }
+              }
+            },
+            "version" : 162
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "host" : {
+            "name" : "metricbeat"
+          },
+          "agent" : {
+            "version" : "8.6.1",
+            "ephemeral_id" : "8ae22226-ecc2-4ee2-b607-13c9eb7c5512",
+            "id" : "66d3e2a9-1d02-4f04-b586-a85ecf5b8133",
+            "name" : "metricbeat",
+            "type" : "metricbeat"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-.monitoring-es-8-mb-2023.04.01-000001",
+        "_id" : "8SlXPYcB9lx-7G-1ele9",
+        "_score" : 1.0,
+        "_source" : {
+          "@timestamp" : "2023-04-01T15:02:35.342Z",
+          "elasticsearch" : {
+            "cluster" : {
+              "id" : "PlBN_GfURwyu4ESCiDhDyA",
+              "name" : "docker-cluster"
+            },
+            "index" : {
+              "total" : {
+                "segments" : {
+                  "norms_memory_in_bytes" : 0,
+                  "points_memory_in_bytes" : 0,
+                  "version_map_memory_in_bytes" : 0,
+                  "memory_in_bytes" : 0,
+                  "index_writer_memory_in_bytes" : 0,
+                  "term_vectors_memory_in_bytes" : 0,
+                  "fixed_bit_set_memory_in_bytes" : 0,
+                  "count" : 2,
+                  "stored_fields_memory_in_bytes" : 0,
+                  "doc_values_memory_in_bytes" : 0,
+                  "terms_memory_in_bytes" : 0
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0
+                },
+                "merges" : {
+                  "total_size_in_bytes" : 0
+                },
+                "search" : {
+                  "query_total" : 2,
+                  "query_time_in_millis" : 0
+                },
+                "indexing" : {
+                  "index_total" : 2,
+                  "index_time_in_millis" : 1,
+                  "throttle_time_in_millis" : 0
+                },
+                "refresh" : {
+                  "total_time_in_millis" : 14,
+                  "external_total_time_in_millis" : 15
+                },
+                "query_cache" : {
+                  "memory_size_in_bytes" : 0,
+                  "hit_count" : 0,
+                  "miss_count" : 0,
+                  "evictions" : 0
+                },
+                "request_cache" : {
+                  "miss_count" : 0,
+                  "evictions" : 0,
+                  "memory_size_in_bytes" : 0,
+                  "hit_count" : 0
+                },
+                "docs" : {
+                  "count" : 2,
+                  "deleted" : 0
+                },
+                "bulk" : {
+                  "total_size_in_bytes" : 512,
+                  "avg_time_in_millis" : 0,
+                  "avg_size_in_bytes" : 48,
+                  "total_operations" : 2,
+                  "total_time_in_millis" : 1
+                },
+                "store" : {
+                  "size_in_bytes" : 13582
+                }
+              },
+              "status" : "green",
+              "hidden" : true,
+              "shards" : {
+                "total" : 1,
+                "primaries" : 1
+              },
+              "name" : ".fleet-enrollment-api-keys-7",
+              "uuid" : "RxuqIFxWT2yznW9pDoXV7Q",
+              "primaries" : {
+                "store" : {
+                  "size_in_bytes" : 13582
+                },
+                "query_cache" : {
+                  "memory_size_in_bytes" : 0,
+                  "hit_count" : 0,
+                  "miss_count" : 0
+                },
+                "request_cache" : {
+                  "evictions" : 0,
+                  "memory_size_in_bytes" : 0,
+                  "hit_count" : 0,
+                  "miss_count" : 0
+                },
+                "merges" : {
+                  "total_size_in_bytes" : 0
+                },
+                "indexing" : {
+                  "index_time_in_millis" : 1,
+                  "throttle_time_in_millis" : 0,
+                  "index_total" : 2
+                },
+                "segments" : {
+                  "index_writer_memory_in_bytes" : 0,
+                  "memory_in_bytes" : 0,
+                  "term_vectors_memory_in_bytes" : 0,
+                  "norms_memory_in_bytes" : 0,
+                  "points_memory_in_bytes" : 0,
+                  "count" : 2,
+                  "terms_memory_in_bytes" : 0,
+                  "stored_fields_memory_in_bytes" : 0,
+                  "version_map_memory_in_bytes" : 0,
+                  "fixed_bit_set_memory_in_bytes" : 0,
+                  "doc_values_memory_in_bytes" : 0
+                },
+                "search" : {
+                  "query_total" : 2,
+                  "query_time_in_millis" : 0
+                },
+                "docs" : {
+                  "count" : 2,
+                  "deleted" : 0
+                },
+                "refresh" : {
+                  "external_total_time_in_millis" : 15,
+                  "total_time_in_millis" : 14
+                }
+              }
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "host" : {
+            "name" : "metricbeat"
+          },
+          "agent" : {
+            "type" : "metricbeat",
+            "version" : "8.6.1",
+            "ephemeral_id" : "8ae22226-ecc2-4ee2-b607-13c9eb7c5512",
+            "id" : "66d3e2a9-1d02-4f04-b586-a85ecf5b8133",
+            "name" : "metricbeat"
+          },
+          "service" : {
+            "address" : "http://elasticsearch:9200",
+            "type" : "elasticsearch"
+          },
+          "event" : {
+            "module" : "elasticsearch",
+            "duration" : 28753750,
+            "dataset" : "elasticsearch.index"
+          },
+          "metricset" : {
+            "name" : "index",
+            "period" : 10000
+          }
+        }
+      }
+    ]
+  }
+}

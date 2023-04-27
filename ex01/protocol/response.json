@@ -1,0 +1,1739 @@
+{
+  "took" : 18,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 6,
+    "successful" : 6,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 2045,
+      "relation" : "eq"
+    },
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : ".ds-.monitoring-logstash-8-mb-2023.03.27-000001",
+        "_id" : "LARwJ4cBN8cSrfIMY6Or",
+        "_score" : 1.0,
+        "_source" : {
+          "@timestamp" : "2023-03-28T08:53:45.257Z",
+          "service" : {
+            "name" : "logstash",
+            "id" : "",
+            "hostname" : "49dc965d1ec6",
+            "version" : "8.6.1",
+            "address" : "http://logstash:9600/_node/stats",
+            "type" : "logstash"
+          },
+          "event" : {
+            "duration" : 2157282876,
+            "dataset" : "logstash.node.stats",
+            "module" : "logstash"
+          },
+          "metricset" : {
+            "name" : "node_stats",
+            "period" : 10000
+          },
+          "logstash" : {
+            "node" : {
+              "stats" : {
+                "reloads" : {
+                  "failures" : 0,
+                  "successes" : 0
+                },
+                "queue" : {
+                  "events_count" : 0
+                },
+                "process" : {
+                  "open_file_descriptors" : 88,
+                  "max_file_descriptors" : 1048576.0,
+                  "cpu" : {
+                    "percent" : 12
+                  }
+                },
+                "os" : {
+                  "cpu" : {
+                    "percent" : 0,
+                    "load_average" : {
+                      "1m" : 17.67,
+                      "5m" : 14.79,
+                      "15m" : 10.04
+                    }
+                  },
+                  "cgroup" : {
+                    "cpuacct" : {
+                      "control_group" : "/",
+                      "usage_nanos" : 1.002956124068E12
+                    },
+                    "cpu" : {
+                      "stat" : {
+                        "number_of_elapsed_periods" : 0,
+                        "number_of_times_throttled" : 0,
+                        "time_throttled_nanos" : 0
+                      },
+                      "control_group" : "/",
+                      "cfs_quota_micros" : -1
+                    }
+                  }
+                },
+                "logstash" : {
+                  "snapshot" : false,
+                  "http_address" : "0.0.0.0:9600",
+                  "pipeline" : {
+                    "workers" : 4,
+                    "batch_size" : 125
+                  },
+                  "uuid" : "8c798c98-d617-4593-b6c9-a1dc91bf690c",
+                  "ephemeral_id" : "d9f90778-a512-4175-b191-ebfa1e0e5632",
+                  "host" : "49dc965d1ec6",
+                  "name" : "logstash",
+                  "version" : "8.6.1",
+                  "status" : "green"
+                },
+                "timestamp" : "2023-03-28T08:53:47.288Z",
+                "events" : {
+                  "duration_in_millis" : 0,
+                  "in" : 0,
+                  "filtered" : 0,
+                  "out" : 0
+                },
+                "jvm" : {
+                  "uptime_in_millis" : 8103911.0,
+                  "gc" : {
+                    "collectors" : {
+                      "young" : {
+                        "collection_count" : 81,
+                        "collection_time_in_millis" : 8386
+                      },
+                      "old" : {
+                        "collection_count" : 0,
+                        "collection_time_in_millis" : 0
+                      }
+                    }
+                  },
+                  "mem" : {
+                    "heap_used_percent" : 56,
+                    "heap_max_in_bytes" : 2.68435454E8,
+                    "heap_used_in_bytes" : 1.50573688E8
+                  }
+                },
+                "pipelines" : [
+                  {
+                    "ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                    "events" : {
+                      "out" : 0,
+                      "queue_push_duration_in_millis" : 0,
+                      "duration_in_millis" : 0,
+                      "filtered" : 0,
+                      "in" : 0
+                    },
+                    "reloads" : {
+                      "successes" : 0,
+                      "failures" : 0
+                    },
+                    "queue" : {
+                      "queue_size_in_bytes" : 0,
+                      "type" : "memory",
+                      "events_count" : 0,
+                      "max_queue_size_in_bytes" : 0
+                    },
+                    "vertices" : [
+                      {
+                        "events_out" : 0,
+                        "id" : "8cae95fd7f24326d5954b70f0e76afbe4258b74a496b339584e0a9140fa9d8af",
+                        "pipeline_ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                        "queue_push_duration_in_millis" : 0
+                      },
+                      {
+                        "cluster_uuid" : "wzZZ8VtWRdiMOn-5A6MB3w",
+                        "duration_in_millis" : 800,
+                        "events_in" : 0,
+                        "events_out" : 0,
+                        "id" : "5fe9003da652eec1004264a01cdfd695c7027dbd2b8ec00557fa0ca6e5cde457",
+                        "pipeline_ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46"
+                      }
+                    ],
+                    "id" : "main",
+                    "hash" : "497eeb4a52e3555443decea67bf3898e44a7873ed581976b87c5532fdb9fa046"
+                  }
+                ]
+              }
+            },
+            "cluster" : {
+              "id" : "wzZZ8VtWRdiMOn-5A6MB3w"
+            },
+            "elasticsearch" : {
+              "cluster" : {
+                "id" : "wzZZ8VtWRdiMOn-5A6MB3w"
+              }
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "host" : {
+            "name" : "metricbeat"
+          },
+          "agent" : {
+            "name" : "metricbeat",
+            "type" : "metricbeat",
+            "version" : "8.6.1",
+            "ephemeral_id" : "37639900-01b2-4668-b106-8eb83e6d039f",
+            "id" : "4d9a14e1-424e-4cf6-8c6c-8ebee35676da"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-.monitoring-logstash-8-mb-2023.03.27-000001",
+        "_id" : "bARxJ4cBN8cSrfIMraM-",
+        "_score" : 1.0,
+        "_source" : {
+          "@timestamp" : "2023-03-28T08:53:45.257Z",
+          "metricset" : {
+            "name" : "node_stats",
+            "period" : 10000
+          },
+          "logstash" : {
+            "node" : {
+              "stats" : {
+                "events" : {
+                  "duration_in_millis" : 0,
+                  "in" : 0,
+                  "filtered" : 0,
+                  "out" : 0
+                },
+                "jvm" : {
+                  "uptime_in_millis" : 8103911.0,
+                  "gc" : {
+                    "collectors" : {
+                      "old" : {
+                        "collection_count" : 0,
+                        "collection_time_in_millis" : 0
+                      },
+                      "young" : {
+                        "collection_count" : 81,
+                        "collection_time_in_millis" : 8386
+                      }
+                    }
+                  },
+                  "mem" : {
+                    "heap_max_in_bytes" : 2.68435454E8,
+                    "heap_used_in_bytes" : 1.50573688E8,
+                    "heap_used_percent" : 56
+                  }
+                },
+                "pipelines" : [
+                  {
+                    "hash" : "497eeb4a52e3555443decea67bf3898e44a7873ed581976b87c5532fdb9fa046",
+                    "ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                    "events" : {
+                      "filtered" : 0,
+                      "in" : 0,
+                      "out" : 0,
+                      "queue_push_duration_in_millis" : 0,
+                      "duration_in_millis" : 0
+                    },
+                    "reloads" : {
+                      "successes" : 0,
+                      "failures" : 0
+                    },
+                    "queue" : {
+                      "events_count" : 0,
+                      "max_queue_size_in_bytes" : 0,
+                      "queue_size_in_bytes" : 0,
+                      "type" : "memory"
+                    },
+                    "vertices" : [
+                      {
+                        "events_out" : 0,
+                        "id" : "8cae95fd7f24326d5954b70f0e76afbe4258b74a496b339584e0a9140fa9d8af",
+                        "pipeline_ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                        "queue_push_duration_in_millis" : 0
+                      },
+                      {
+                        "cluster_uuid" : "wzZZ8VtWRdiMOn-5A6MB3w",
+                        "duration_in_millis" : 800,
+                        "events_in" : 0,
+                        "events_out" : 0,
+                        "id" : "5fe9003da652eec1004264a01cdfd695c7027dbd2b8ec00557fa0ca6e5cde457",
+                        "pipeline_ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46"
+                      }
+                    ],
+                    "id" : "main"
+                  }
+                ],
+                "reloads" : {
+                  "failures" : 0,
+                  "successes" : 0
+                },
+                "queue" : {
+                  "events_count" : 0
+                },
+                "process" : {
+                  "open_file_descriptors" : 88,
+                  "max_file_descriptors" : 1048576.0,
+                  "cpu" : {
+                    "percent" : 12
+                  }
+                },
+                "os" : {
+                  "cpu" : {
+                    "percent" : 0,
+                    "load_average" : {
+                      "15m" : 10.04,
+                      "1m" : 17.67,
+                      "5m" : 14.79
+                    }
+                  },
+                  "cgroup" : {
+                    "cpuacct" : {
+                      "usage_nanos" : 1.002956124068E12,
+                      "control_group" : "/"
+                    },
+                    "cpu" : {
+                      "stat" : {
+                        "time_throttled_nanos" : 0,
+                        "number_of_elapsed_periods" : 0,
+                        "number_of_times_throttled" : 0
+                      },
+                      "control_group" : "/",
+                      "cfs_quota_micros" : -1
+                    }
+                  }
+                },
+                "logstash" : {
+                  "uuid" : "8c798c98-d617-4593-b6c9-a1dc91bf690c",
+                  "ephemeral_id" : "d9f90778-a512-4175-b191-ebfa1e0e5632",
+                  "host" : "49dc965d1ec6",
+                  "snapshot" : false,
+                  "http_address" : "0.0.0.0:9600",
+                  "pipeline" : {
+                    "batch_size" : 125,
+                    "workers" : 4
+                  },
+                  "name" : "logstash",
+                  "version" : "8.6.1",
+                  "status" : "green"
+                },
+                "timestamp" : "2023-03-28T08:53:47.288Z"
+              }
+            },
+            "cluster" : {
+              "id" : "wzZZ8VtWRdiMOn-5A6MB3w"
+            },
+            "elasticsearch" : {
+              "cluster" : {
+                "id" : "wzZZ8VtWRdiMOn-5A6MB3w"
+              }
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "host" : {
+            "name" : "metricbeat"
+          },
+          "agent" : {
+            "name" : "metricbeat",
+            "type" : "metricbeat",
+            "version" : "8.6.1",
+            "ephemeral_id" : "37639900-01b2-4668-b106-8eb83e6d039f",
+            "id" : "4d9a14e1-424e-4cf6-8c6c-8ebee35676da"
+          },
+          "service" : {
+            "name" : "logstash",
+            "id" : "",
+            "hostname" : "49dc965d1ec6",
+            "version" : "8.6.1",
+            "address" : "http://logstash:9600/_node/stats",
+            "type" : "logstash"
+          },
+          "event" : {
+            "dataset" : "logstash.node.stats",
+            "module" : "logstash",
+            "duration" : 2157282876
+          }
+        }
+      },
+      {
+        "_index" : ".ds-.monitoring-logstash-8-mb-2023.03.27-000001",
+        "_id" : "rOa_J4cB2d6JBeJjSAfx",
+        "_score" : 1.0,
+        "_source" : {
+          "@timestamp" : "2023-03-28T09:21:55.243Z",
+          "event" : {
+            "dataset" : "logstash.node.stats",
+            "module" : "logstash",
+            "duration" : 194671083
+          },
+          "metricset" : {
+            "name" : "node_stats",
+            "period" : 10000
+          },
+          "logstash" : {
+            "node" : {
+              "stats" : {
+                "events" : {
+                  "duration_in_millis" : 0,
+                  "in" : 0,
+                  "filtered" : 0,
+                  "out" : 0
+                },
+                "queue" : {
+                  "events_count" : 0
+                },
+                "timestamp" : "2023-03-28T09:21:55.431Z",
+                "logstash" : {
+                  "uuid" : "8c798c98-d617-4593-b6c9-a1dc91bf690c",
+                  "ephemeral_id" : "d9f90778-a512-4175-b191-ebfa1e0e5632",
+                  "name" : "logstash",
+                  "status" : "green",
+                  "host" : "49dc965d1ec6",
+                  "version" : "8.6.1",
+                  "snapshot" : false,
+                  "http_address" : "0.0.0.0:9600",
+                  "pipeline" : {
+                    "batch_size" : 125,
+                    "workers" : 4
+                  }
+                },
+                "jvm" : {
+                  "mem" : {
+                    "heap_used_in_bytes" : 1.47176848E8,
+                    "heap_used_percent" : 54,
+                    "heap_max_in_bytes" : 2.68435454E8
+                  },
+                  "uptime_in_millis" : 9791675.0,
+                  "gc" : {
+                    "collectors" : {
+                      "old" : {
+                        "collection_count" : 0,
+                        "collection_time_in_millis" : 0
+                      },
+                      "young" : {
+                        "collection_time_in_millis" : 31885,
+                        "collection_count" : 125
+                      }
+                    }
+                  }
+                },
+                "reloads" : {
+                  "failures" : 0,
+                  "successes" : 0
+                },
+                "process" : {
+                  "open_file_descriptors" : 88,
+                  "max_file_descriptors" : 1048576.0,
+                  "cpu" : {
+                    "percent" : 4
+                  }
+                },
+                "os" : {
+                  "cpu" : {
+                    "percent" : 0,
+                    "load_average" : {
+                      "15m" : 22.36,
+                      "1m" : 21.88,
+                      "5m" : 25.82
+                    }
+                  },
+                  "cgroup" : {
+                    "cpuacct" : {
+                      "control_group" : "/",
+                      "usage_nanos" : 1.788033592431E12
+                    },
+                    "cpu" : {
+                      "stat" : {
+                        "number_of_elapsed_periods" : 0,
+                        "number_of_times_throttled" : 0,
+                        "time_throttled_nanos" : 0
+                      },
+                      "control_group" : "/",
+                      "cfs_quota_micros" : -1
+                    }
+                  }
+                },
+                "pipelines" : [
+                  {
+                    "id" : "main",
+                    "hash" : "497eeb4a52e3555443decea67bf3898e44a7873ed581976b87c5532fdb9fa046",
+                    "ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                    "events" : {
+                      "in" : 0,
+                      "out" : 0,
+                      "queue_push_duration_in_millis" : 0,
+                      "duration_in_millis" : 0,
+                      "filtered" : 0
+                    },
+                    "reloads" : {
+                      "successes" : 0,
+                      "failures" : 0
+                    },
+                    "queue" : {
+                      "queue_size_in_bytes" : 0,
+                      "type" : "memory",
+                      "events_count" : 0,
+                      "max_queue_size_in_bytes" : 0
+                    },
+                    "vertices" : [
+                      {
+                        "pipeline_ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                        "queue_push_duration_in_millis" : 0,
+                        "events_out" : 0,
+                        "id" : "8cae95fd7f24326d5954b70f0e76afbe4258b74a496b339584e0a9140fa9d8af"
+                      },
+                      {
+                        "cluster_uuid" : "wzZZ8VtWRdiMOn-5A6MB3w",
+                        "duration_in_millis" : 2155,
+                        "events_in" : 0,
+                        "events_out" : 0,
+                        "id" : "5fe9003da652eec1004264a01cdfd695c7027dbd2b8ec00557fa0ca6e5cde457",
+                        "pipeline_ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "cluster" : {
+              "id" : "wzZZ8VtWRdiMOn-5A6MB3w"
+            },
+            "elasticsearch" : {
+              "cluster" : {
+                "id" : "wzZZ8VtWRdiMOn-5A6MB3w"
+              }
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "host" : {
+            "name" : "metricbeat"
+          },
+          "agent" : {
+            "id" : "4d9a14e1-424e-4cf6-8c6c-8ebee35676da",
+            "name" : "metricbeat",
+            "type" : "metricbeat",
+            "version" : "8.6.1",
+            "ephemeral_id" : "37639900-01b2-4668-b106-8eb83e6d039f"
+          },
+          "service" : {
+            "type" : "logstash",
+            "name" : "logstash",
+            "id" : "",
+            "hostname" : "49dc965d1ec6",
+            "version" : "8.6.1",
+            "address" : "http://logstash:9600/_node/stats"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-.monitoring-logstash-8-mb-2023.03.27-000001",
+        "_id" : "C-bAJ4cB2d6JBeJj9QgT",
+        "_score" : 1.0,
+        "_source" : {
+          "@timestamp" : "2023-03-28T09:22:05.249Z",
+          "event" : {
+            "duration" : 805248500,
+            "dataset" : "logstash.node.stats",
+            "module" : "logstash"
+          },
+          "metricset" : {
+            "name" : "node_stats",
+            "period" : 10000
+          },
+          "logstash" : {
+            "node" : {
+              "stats" : {
+                "events" : {
+                  "in" : 0,
+                  "filtered" : 0,
+                  "out" : 0,
+                  "duration_in_millis" : 0
+                },
+                "os" : {
+                  "cpu" : {
+                    "load_average" : {
+                      "5m" : 25.31,
+                      "15m" : 22.23,
+                      "1m" : 20.11
+                    },
+                    "percent" : 0
+                  },
+                  "cgroup" : {
+                    "cpu" : {
+                      "stat" : {
+                        "number_of_elapsed_periods" : 0,
+                        "number_of_times_throttled" : 0,
+                        "time_throttled_nanos" : 0
+                      },
+                      "control_group" : "/",
+                      "cfs_quota_micros" : -1
+                    },
+                    "cpuacct" : {
+                      "control_group" : "/",
+                      "usage_nanos" : 1.791300945294E12
+                    }
+                  }
+                },
+                "pipelines" : [
+                  {
+                    "events" : {
+                      "in" : 0,
+                      "out" : 0,
+                      "queue_push_duration_in_millis" : 0,
+                      "duration_in_millis" : 0,
+                      "filtered" : 0
+                    },
+                    "reloads" : {
+                      "successes" : 0,
+                      "failures" : 0
+                    },
+                    "queue" : {
+                      "events_count" : 0,
+                      "max_queue_size_in_bytes" : 0,
+                      "queue_size_in_bytes" : 0,
+                      "type" : "memory"
+                    },
+                    "vertices" : [
+                      {
+                        "pipeline_ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                        "queue_push_duration_in_millis" : 0,
+                        "events_out" : 0,
+                        "id" : "8cae95fd7f24326d5954b70f0e76afbe4258b74a496b339584e0a9140fa9d8af"
+                      },
+                      {
+                        "id" : "5fe9003da652eec1004264a01cdfd695c7027dbd2b8ec00557fa0ca6e5cde457",
+                        "pipeline_ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                        "cluster_uuid" : "wzZZ8VtWRdiMOn-5A6MB3w",
+                        "duration_in_millis" : 2155,
+                        "events_in" : 0,
+                        "events_out" : 0
+                      }
+                    ],
+                    "id" : "main",
+                    "hash" : "497eeb4a52e3555443decea67bf3898e44a7873ed581976b87c5532fdb9fa046",
+                    "ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46"
+                  }
+                ],
+                "logstash" : {
+                  "ephemeral_id" : "d9f90778-a512-4175-b191-ebfa1e0e5632",
+                  "name" : "logstash",
+                  "http_address" : "0.0.0.0:9600",
+                  "uuid" : "8c798c98-d617-4593-b6c9-a1dc91bf690c",
+                  "host" : "49dc965d1ec6",
+                  "version" : "8.6.1",
+                  "snapshot" : false,
+                  "status" : "green",
+                  "pipeline" : {
+                    "workers" : 4,
+                    "batch_size" : 125
+                  }
+                },
+                "timestamp" : "2023-03-28T09:22:06.050Z",
+                "jvm" : {
+                  "gc" : {
+                    "collectors" : {
+                      "old" : {
+                        "collection_count" : 0,
+                        "collection_time_in_millis" : 0
+                      },
+                      "young" : {
+                        "collection_time_in_millis" : 31885,
+                        "collection_count" : 125
+                      }
+                    }
+                  },
+                  "mem" : {
+                    "heap_max_in_bytes" : 2.68435454E8,
+                    "heap_used_in_bytes" : 1.51371152E8,
+                    "heap_used_percent" : 56
+                  },
+                  "uptime_in_millis" : 9801939.0
+                },
+                "reloads" : {
+                  "failures" : 0,
+                  "successes" : 0
+                },
+                "queue" : {
+                  "events_count" : 0
+                },
+                "process" : {
+                  "open_file_descriptors" : 88,
+                  "max_file_descriptors" : 1048576.0,
+                  "cpu" : {
+                    "percent" : 4
+                  }
+                }
+              }
+            },
+            "cluster" : {
+              "id" : "wzZZ8VtWRdiMOn-5A6MB3w"
+            },
+            "elasticsearch" : {
+              "cluster" : {
+                "id" : "wzZZ8VtWRdiMOn-5A6MB3w"
+              }
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "host" : {
+            "name" : "metricbeat"
+          },
+          "agent" : {
+            "version" : "8.6.1",
+            "ephemeral_id" : "37639900-01b2-4668-b106-8eb83e6d039f",
+            "id" : "4d9a14e1-424e-4cf6-8c6c-8ebee35676da",
+            "name" : "metricbeat",
+            "type" : "metricbeat"
+          },
+          "service" : {
+            "type" : "logstash",
+            "name" : "logstash",
+            "id" : "",
+            "hostname" : "49dc965d1ec6",
+            "version" : "8.6.1",
+            "address" : "http://logstash:9600/_node/stats"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-.monitoring-logstash-8-mb-2023.03.27-000001",
+        "_id" : "iBalJ4cBeG4iVj2T0-RI",
+        "_score" : 1.0,
+        "_source" : {
+          "@timestamp" : "2023-03-28T09:18:34.233Z",
+          "service" : {
+            "hostname" : "49dc965d1ec6",
+            "version" : "8.6.1",
+            "address" : "http://logstash:9600/_node/stats",
+            "type" : "logstash",
+            "name" : "logstash",
+            "id" : ""
+          },
+          "event" : {
+            "duration" : 5516974211,
+            "dataset" : "logstash.node.stats",
+            "module" : "logstash"
+          },
+          "metricset" : {
+            "name" : "node_stats",
+            "period" : 10000
+          },
+          "logstash" : {
+            "node" : {
+              "stats" : {
+                "os" : {
+                  "cpu" : {
+                    "percent" : 0,
+                    "load_average" : {
+                      "15m" : 22.37,
+                      "1m" : 33.88,
+                      "5m" : 28.78
+                    }
+                  },
+                  "cgroup" : {
+                    "cpuacct" : {
+                      "control_group" : "/",
+                      "usage_nanos" : 1.696411788984E12
+                    },
+                    "cpu" : {
+                      "stat" : {
+                        "time_throttled_nanos" : 0,
+                        "number_of_elapsed_periods" : 0,
+                        "number_of_times_throttled" : 0
+                      },
+                      "control_group" : "/",
+                      "cfs_quota_micros" : -1
+                    }
+                  }
+                },
+                "events" : {
+                  "out" : 0,
+                  "duration_in_millis" : 0,
+                  "in" : 0,
+                  "filtered" : 0
+                },
+                "process" : {
+                  "open_file_descriptors" : 86,
+                  "max_file_descriptors" : 1048576.0,
+                  "cpu" : {
+                    "percent" : 17
+                  }
+                },
+                "queue" : {
+                  "events_count" : 0
+                },
+                "pipelines" : [
+                  {
+                    "hash" : "497eeb4a52e3555443decea67bf3898e44a7873ed581976b87c5532fdb9fa046",
+                    "ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                    "events" : {
+                      "filtered" : 0,
+                      "in" : 0,
+                      "out" : 0,
+                      "queue_push_duration_in_millis" : 0,
+                      "duration_in_millis" : 0
+                    },
+                    "reloads" : {
+                      "successes" : 0,
+                      "failures" : 0
+                    },
+                    "queue" : {
+                      "events_count" : 0,
+                      "max_queue_size_in_bytes" : 0,
+                      "queue_size_in_bytes" : 0,
+                      "type" : "memory"
+                    },
+                    "vertices" : [
+                      {
+                        "queue_push_duration_in_millis" : 0,
+                        "events_out" : 0,
+                        "id" : "8cae95fd7f24326d5954b70f0e76afbe4258b74a496b339584e0a9140fa9d8af",
+                        "pipeline_ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46"
+                      },
+                      {
+                        "events_out" : 0,
+                        "id" : "5fe9003da652eec1004264a01cdfd695c7027dbd2b8ec00557fa0ca6e5cde457",
+                        "pipeline_ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                        "cluster_uuid" : "wzZZ8VtWRdiMOn-5A6MB3w",
+                        "duration_in_millis" : 2119,
+                        "events_in" : 0
+                      }
+                    ],
+                    "id" : "main"
+                  }
+                ],
+                "logstash" : {
+                  "version" : "8.6.1",
+                  "status" : "green",
+                  "ephemeral_id" : "d9f90778-a512-4175-b191-ebfa1e0e5632",
+                  "name" : "logstash",
+                  "host" : "49dc965d1ec6",
+                  "pipeline" : {
+                    "batch_size" : 125,
+                    "workers" : 4
+                  },
+                  "uuid" : "8c798c98-d617-4593-b6c9-a1dc91bf690c",
+                  "snapshot" : false,
+                  "http_address" : "0.0.0.0:9600"
+                },
+                "timestamp" : "2023-03-28T09:18:39.750Z",
+                "jvm" : {
+                  "gc" : {
+                    "collectors" : {
+                      "old" : {
+                        "collection_count" : 0,
+                        "collection_time_in_millis" : 0
+                      },
+                      "young" : {
+                        "collection_count" : 117,
+                        "collection_time_in_millis" : 29056
+                      }
+                    }
+                  },
+                  "mem" : {
+                    "heap_max_in_bytes" : 2.68435454E8,
+                    "heap_used_in_bytes" : 1.55674944E8,
+                    "heap_used_percent" : 57
+                  },
+                  "uptime_in_millis" : 9598528.0
+                },
+                "reloads" : {
+                  "failures" : 0,
+                  "successes" : 0
+                }
+              }
+            },
+            "cluster" : {
+              "id" : "wzZZ8VtWRdiMOn-5A6MB3w"
+            },
+            "elasticsearch" : {
+              "cluster" : {
+                "id" : "wzZZ8VtWRdiMOn-5A6MB3w"
+              }
+            }
+          },
+          "agent" : {
+            "id" : "4d9a14e1-424e-4cf6-8c6c-8ebee35676da",
+            "name" : "metricbeat",
+            "type" : "metricbeat",
+            "version" : "8.6.1",
+            "ephemeral_id" : "37639900-01b2-4668-b106-8eb83e6d039f"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "host" : {
+            "name" : "metricbeat"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-.monitoring-logstash-8-mb-2023.03.27-000001",
+        "_id" : "iRalJ4cBeG4iVj2T0-RI",
+        "_score" : 1.0,
+        "_source" : {
+          "@timestamp" : "2023-03-28T09:18:39.750Z",
+          "metricset" : {
+            "period" : 10000,
+            "name" : "node_stats"
+          },
+          "logstash" : {
+            "node" : {
+              "stats" : {
+                "jvm" : {
+                  "gc" : {
+                    "collectors" : {
+                      "young" : {
+                        "collection_count" : 117,
+                        "collection_time_in_millis" : 29056
+                      },
+                      "old" : {
+                        "collection_count" : 0,
+                        "collection_time_in_millis" : 0
+                      }
+                    }
+                  },
+                  "mem" : {
+                    "heap_max_in_bytes" : 2.68435454E8,
+                    "heap_used_in_bytes" : 1.55674944E8,
+                    "heap_used_percent" : 57
+                  },
+                  "uptime_in_millis" : 9598528.0
+                },
+                "os" : {
+                  "cpu" : {
+                    "percent" : 0,
+                    "load_average" : {
+                      "15m" : 22.37,
+                      "1m" : 33.88,
+                      "5m" : 28.78
+                    }
+                  },
+                  "cgroup" : {
+                    "cpu" : {
+                      "stat" : {
+                        "number_of_elapsed_periods" : 0,
+                        "number_of_times_throttled" : 0,
+                        "time_throttled_nanos" : 0
+                      },
+                      "control_group" : "/",
+                      "cfs_quota_micros" : -1
+                    },
+                    "cpuacct" : {
+                      "control_group" : "/",
+                      "usage_nanos" : 1.696411788984E12
+                    }
+                  }
+                },
+                "pipelines" : [
+                  {
+                    "ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                    "events" : {
+                      "filtered" : 0,
+                      "in" : 0,
+                      "out" : 0,
+                      "queue_push_duration_in_millis" : 0,
+                      "duration_in_millis" : 0
+                    },
+                    "reloads" : {
+                      "failures" : 0,
+                      "successes" : 0
+                    },
+                    "queue" : {
+                      "events_count" : 0,
+                      "max_queue_size_in_bytes" : 0,
+                      "queue_size_in_bytes" : 0,
+                      "type" : "memory"
+                    },
+                    "vertices" : [
+                      {
+                        "id" : "8cae95fd7f24326d5954b70f0e76afbe4258b74a496b339584e0a9140fa9d8af",
+                        "pipeline_ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                        "queue_push_duration_in_millis" : 0,
+                        "events_out" : 0
+                      },
+                      {
+                        "cluster_uuid" : "wzZZ8VtWRdiMOn-5A6MB3w",
+                        "duration_in_millis" : 2119,
+                        "events_in" : 0,
+                        "events_out" : 0,
+                        "id" : "5fe9003da652eec1004264a01cdfd695c7027dbd2b8ec00557fa0ca6e5cde457",
+                        "pipeline_ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46"
+                      }
+                    ],
+                    "id" : "main",
+                    "hash" : "497eeb4a52e3555443decea67bf3898e44a7873ed581976b87c5532fdb9fa046"
+                  }
+                ],
+                "logstash" : {
+                  "version" : "8.6.1",
+                  "pipeline" : {
+                    "batch_size" : 125,
+                    "workers" : 4
+                  },
+                  "uuid" : "8c798c98-d617-4593-b6c9-a1dc91bf690c",
+                  "host" : "49dc965d1ec6",
+                  "snapshot" : false,
+                  "status" : "green",
+                  "http_address" : "0.0.0.0:9600",
+                  "ephemeral_id" : "d9f90778-a512-4175-b191-ebfa1e0e5632",
+                  "name" : "logstash"
+                },
+                "timestamp" : "2023-03-28T09:18:39.759Z",
+                "events" : {
+                  "duration_in_millis" : 0,
+                  "in" : 0,
+                  "filtered" : 0,
+                  "out" : 0
+                },
+                "reloads" : {
+                  "failures" : 0,
+                  "successes" : 0
+                },
+                "queue" : {
+                  "events_count" : 0
+                },
+                "process" : {
+                  "open_file_descriptors" : 86,
+                  "max_file_descriptors" : 1048576.0,
+                  "cpu" : {
+                    "percent" : 17
+                  }
+                }
+              }
+            },
+            "cluster" : {
+              "id" : "wzZZ8VtWRdiMOn-5A6MB3w"
+            },
+            "elasticsearch" : {
+              "cluster" : {
+                "id" : "wzZZ8VtWRdiMOn-5A6MB3w"
+              }
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "host" : {
+            "name" : "metricbeat"
+          },
+          "agent" : {
+            "name" : "metricbeat",
+            "type" : "metricbeat",
+            "version" : "8.6.1",
+            "ephemeral_id" : "37639900-01b2-4668-b106-8eb83e6d039f",
+            "id" : "4d9a14e1-424e-4cf6-8c6c-8ebee35676da"
+          },
+          "service" : {
+            "address" : "http://logstash:9600/_node/stats",
+            "type" : "logstash",
+            "name" : "logstash",
+            "id" : "",
+            "hostname" : "49dc965d1ec6",
+            "version" : "8.6.1"
+          },
+          "event" : {
+            "module" : "logstash",
+            "duration" : 9782125,
+            "dataset" : "logstash.node.stats"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-.monitoring-logstash-8-mb-2023.03.27-000001",
+        "_id" : "3dvmJ4cBZitdqm4z_hLH",
+        "_score" : 1.0,
+        "_source" : {
+          "@timestamp" : "2023-03-28T09:41:25.350Z",
+          "service" : {
+            "type" : "logstash",
+            "name" : "logstash",
+            "id" : "",
+            "hostname" : "49dc965d1ec6",
+            "version" : "8.6.1",
+            "address" : "http://logstash:9600/_node/stats"
+          },
+          "event" : {
+            "module" : "logstash",
+            "duration" : 212428417,
+            "dataset" : "logstash.node.stats"
+          },
+          "metricset" : {
+            "name" : "node_stats",
+            "period" : 10000
+          },
+          "logstash" : {
+            "cluster" : {
+              "id" : "wzZZ8VtWRdiMOn-5A6MB3w"
+            },
+            "elasticsearch" : {
+              "cluster" : {
+                "id" : "wzZZ8VtWRdiMOn-5A6MB3w"
+              }
+            },
+            "node" : {
+              "stats" : {
+                "events" : {
+                  "duration_in_millis" : 0,
+                  "in" : 0,
+                  "filtered" : 0,
+                  "out" : 0
+                },
+                "jvm" : {
+                  "gc" : {
+                    "collectors" : {
+                      "old" : {
+                        "collection_count" : 0,
+                        "collection_time_in_millis" : 0
+                      },
+                      "young" : {
+                        "collection_count" : 147,
+                        "collection_time_in_millis" : 42860
+                      }
+                    }
+                  },
+                  "mem" : {
+                    "heap_used_in_bytes" : 1.48074032E8,
+                    "heap_used_percent" : 55,
+                    "heap_max_in_bytes" : 2.68435454E8
+                  },
+                  "uptime_in_millis" : 1.0961284E7
+                },
+                "reloads" : {
+                  "failures" : 0,
+                  "successes" : 0
+                },
+                "os" : {
+                  "cpu" : {
+                    "percent" : 0,
+                    "load_average" : {
+                      "5m" : 18.86,
+                      "15m" : 19.71,
+                      "1m" : 20.6
+                    }
+                  },
+                  "cgroup" : {
+                    "cpuacct" : {
+                      "control_group" : "/",
+                      "usage_nanos" : 2.204159773361E12
+                    },
+                    "cpu" : {
+                      "stat" : {
+                        "number_of_elapsed_periods" : 0,
+                        "number_of_times_throttled" : 0,
+                        "time_throttled_nanos" : 0
+                      },
+                      "control_group" : "/",
+                      "cfs_quota_micros" : -1
+                    }
+                  }
+                },
+                "logstash" : {
+                  "snapshot" : false,
+                  "status" : "green",
+                  "http_address" : "0.0.0.0:9600",
+                  "uuid" : "8c798c98-d617-4593-b6c9-a1dc91bf690c",
+                  "name" : "logstash",
+                  "host" : "49dc965d1ec6",
+                  "version" : "8.6.1",
+                  "ephemeral_id" : "d9f90778-a512-4175-b191-ebfa1e0e5632",
+                  "pipeline" : {
+                    "batch_size" : 125,
+                    "workers" : 4
+                  }
+                },
+                "timestamp" : "2023-03-28T09:41:25.553Z",
+                "queue" : {
+                  "events_count" : 0
+                },
+                "process" : {
+                  "open_file_descriptors" : 87,
+                  "max_file_descriptors" : 1048576.0,
+                  "cpu" : {
+                    "percent" : 5
+                  }
+                },
+                "pipelines" : [
+                  {
+                    "reloads" : {
+                      "successes" : 0,
+                      "failures" : 0
+                    },
+                    "queue" : {
+                      "type" : "memory",
+                      "events_count" : 0,
+                      "max_queue_size_in_bytes" : 0,
+                      "queue_size_in_bytes" : 0
+                    },
+                    "vertices" : [
+                      {
+                        "events_out" : 0,
+                        "id" : "8cae95fd7f24326d5954b70f0e76afbe4258b74a496b339584e0a9140fa9d8af",
+                        "pipeline_ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                        "queue_push_duration_in_millis" : 0
+                      },
+                      {
+                        "pipeline_ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                        "cluster_uuid" : "wzZZ8VtWRdiMOn-5A6MB3w",
+                        "duration_in_millis" : 2876,
+                        "events_in" : 0,
+                        "events_out" : 0,
+                        "id" : "5fe9003da652eec1004264a01cdfd695c7027dbd2b8ec00557fa0ca6e5cde457"
+                      }
+                    ],
+                    "id" : "main",
+                    "hash" : "497eeb4a52e3555443decea67bf3898e44a7873ed581976b87c5532fdb9fa046",
+                    "ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                    "events" : {
+                      "duration_in_millis" : 0,
+                      "filtered" : 0,
+                      "in" : 0,
+                      "out" : 0,
+                      "queue_push_duration_in_millis" : 0
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "host" : {
+            "name" : "metricbeat"
+          },
+          "agent" : {
+            "type" : "metricbeat",
+            "version" : "8.6.1",
+            "ephemeral_id" : "37639900-01b2-4668-b106-8eb83e6d039f",
+            "id" : "4d9a14e1-424e-4cf6-8c6c-8ebee35676da",
+            "name" : "metricbeat"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-.monitoring-logstash-8-mb-2023.03.27-000001",
+        "_id" : "EdvnJ4cBZitdqm4zRBMk",
+        "_score" : 1.0,
+        "_source" : {
+          "@timestamp" : "2023-03-28T09:41:35.358Z",
+          "service" : {
+            "hostname" : "49dc965d1ec6",
+            "version" : "8.6.1",
+            "address" : "http://logstash:9600/_node/stats",
+            "type" : "logstash",
+            "name" : "logstash",
+            "id" : ""
+          },
+          "event" : {
+            "module" : "logstash",
+            "duration" : 5396635003,
+            "dataset" : "logstash.node.stats"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "host" : {
+            "name" : "metricbeat"
+          },
+          "agent" : {
+            "id" : "4d9a14e1-424e-4cf6-8c6c-8ebee35676da",
+            "name" : "metricbeat",
+            "type" : "metricbeat",
+            "version" : "8.6.1",
+            "ephemeral_id" : "37639900-01b2-4668-b106-8eb83e6d039f"
+          },
+          "metricset" : {
+            "period" : 10000,
+            "name" : "node_stats"
+          },
+          "logstash" : {
+            "node" : {
+              "stats" : {
+                "queue" : {
+                  "events_count" : 0
+                },
+                "process" : {
+                  "cpu" : {
+                    "percent" : 7
+                  },
+                  "open_file_descriptors" : 88,
+                  "max_file_descriptors" : 1048576.0
+                },
+                "pipelines" : [
+                  {
+                    "reloads" : {
+                      "failures" : 0,
+                      "successes" : 0
+                    },
+                    "queue" : {
+                      "type" : "memory",
+                      "events_count" : 0,
+                      "max_queue_size_in_bytes" : 0,
+                      "queue_size_in_bytes" : 0
+                    },
+                    "vertices" : [
+                      {
+                        "events_out" : 0,
+                        "id" : "8cae95fd7f24326d5954b70f0e76afbe4258b74a496b339584e0a9140fa9d8af",
+                        "pipeline_ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                        "queue_push_duration_in_millis" : 0
+                      },
+                      {
+                        "events_out" : 0,
+                        "id" : "5fe9003da652eec1004264a01cdfd695c7027dbd2b8ec00557fa0ca6e5cde457",
+                        "pipeline_ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                        "cluster_uuid" : "wzZZ8VtWRdiMOn-5A6MB3w",
+                        "duration_in_millis" : 2876,
+                        "events_in" : 0
+                      }
+                    ],
+                    "id" : "main",
+                    "hash" : "497eeb4a52e3555443decea67bf3898e44a7873ed581976b87c5532fdb9fa046",
+                    "ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                    "events" : {
+                      "duration_in_millis" : 0,
+                      "filtered" : 0,
+                      "in" : 0,
+                      "out" : 0,
+                      "queue_push_duration_in_millis" : 0
+                    }
+                  }
+                ],
+                "events" : {
+                  "duration_in_millis" : 0,
+                  "in" : 0,
+                  "filtered" : 0,
+                  "out" : 0
+                },
+                "reloads" : {
+                  "successes" : 0,
+                  "failures" : 0
+                },
+                "os" : {
+                  "cpu" : {
+                    "percent" : 0,
+                    "load_average" : {
+                      "15m" : 19.71,
+                      "1m" : 20.51,
+                      "5m" : 18.9
+                    }
+                  },
+                  "cgroup" : {
+                    "cpuacct" : {
+                      "control_group" : "/",
+                      "usage_nanos" : 2.207181872389E12
+                    },
+                    "cpu" : {
+                      "stat" : {
+                        "number_of_times_throttled" : 0,
+                        "time_throttled_nanos" : 0,
+                        "number_of_elapsed_periods" : 0
+                      },
+                      "control_group" : "/",
+                      "cfs_quota_micros" : -1
+                    }
+                  }
+                },
+                "logstash" : {
+                  "host" : "49dc965d1ec6",
+                  "snapshot" : false,
+                  "status" : "green",
+                  "http_address" : "0.0.0.0:9600",
+                  "name" : "logstash",
+                  "ephemeral_id" : "d9f90778-a512-4175-b191-ebfa1e0e5632",
+                  "version" : "8.6.1",
+                  "pipeline" : {
+                    "batch_size" : 125,
+                    "workers" : 4
+                  },
+                  "uuid" : "8c798c98-d617-4593-b6c9-a1dc91bf690c"
+                },
+                "timestamp" : "2023-03-28T09:41:40.732Z",
+                "jvm" : {
+                  "gc" : {
+                    "collectors" : {
+                      "old" : {
+                        "collection_count" : 0,
+                        "collection_time_in_millis" : 0
+                      },
+                      "young" : {
+                        "collection_count" : 147,
+                        "collection_time_in_millis" : 42860
+                      }
+                    }
+                  },
+                  "mem" : {
+                    "heap_max_in_bytes" : 2.68435454E8,
+                    "heap_used_in_bytes" : 1.55414064E8,
+                    "heap_used_percent" : 57
+                  },
+                  "uptime_in_millis" : 1.0978215E7
+                }
+              }
+            },
+            "cluster" : {
+              "id" : "wzZZ8VtWRdiMOn-5A6MB3w"
+            },
+            "elasticsearch" : {
+              "cluster" : {
+                "id" : "wzZZ8VtWRdiMOn-5A6MB3w"
+              }
+            }
+          }
+        }
+      },
+      {
+        "_index" : ".ds-.monitoring-logstash-8-mb-2023.03.27-000001",
+        "_id" : "n5ynJ4cBooNEzMqNhgF4",
+        "_score" : 1.0,
+        "_source" : {
+          "@timestamp" : "2023-03-28T09:18:45.229Z",
+          "logstash" : {
+            "node" : {
+              "stats" : {
+                "events" : {
+                  "duration_in_millis" : 0,
+                  "in" : 0,
+                  "filtered" : 0,
+                  "out" : 0
+                },
+                "process" : {
+                  "open_file_descriptors" : 87,
+                  "max_file_descriptors" : 1048576.0,
+                  "cpu" : {
+                    "percent" : 6
+                  }
+                },
+                "logstash" : {
+                  "uuid" : "8c798c98-d617-4593-b6c9-a1dc91bf690c",
+                  "snapshot" : false,
+                  "http_address" : "0.0.0.0:9600",
+                  "pipeline" : {
+                    "batch_size" : 125,
+                    "workers" : 4
+                  },
+                  "ephemeral_id" : "d9f90778-a512-4175-b191-ebfa1e0e5632",
+                  "name" : "logstash",
+                  "host" : "49dc965d1ec6",
+                  "version" : "8.6.1",
+                  "status" : "green"
+                },
+                "jvm" : {
+                  "gc" : {
+                    "collectors" : {
+                      "old" : {
+                        "collection_count" : 0,
+                        "collection_time_in_millis" : 0
+                      },
+                      "young" : {
+                        "collection_count" : 119,
+                        "collection_time_in_millis" : 29193
+                      }
+                    }
+                  },
+                  "mem" : {
+                    "heap_max_in_bytes" : 2.68435454E8,
+                    "heap_used_in_bytes" : 1.45884304E8,
+                    "heap_used_percent" : 54
+                  },
+                  "uptime_in_millis" : 9603587.0
+                },
+                "reloads" : {
+                  "successes" : 0,
+                  "failures" : 0
+                },
+                "queue" : {
+                  "events_count" : 0
+                },
+                "os" : {
+                  "cpu" : {
+                    "percent" : 0,
+                    "load_average" : {
+                      "15m" : 22.26,
+                      "1m" : 31.32,
+                      "5m" : 28.33
+                    }
+                  },
+                  "cgroup" : {
+                    "cpuacct" : {
+                      "control_group" : "/",
+                      "usage_nanos" : 1.697703834759E12
+                    },
+                    "cpu" : {
+                      "stat" : {
+                        "number_of_elapsed_periods" : 0,
+                        "number_of_times_throttled" : 0,
+                        "time_throttled_nanos" : 0
+                      },
+                      "control_group" : "/",
+                      "cfs_quota_micros" : -1
+                    }
+                  }
+                },
+                "pipelines" : [
+                  {
+                    "reloads" : {
+                      "successes" : 0,
+                      "failures" : 0
+                    },
+                    "queue" : {
+                      "events_count" : 0,
+                      "max_queue_size_in_bytes" : 0,
+                      "queue_size_in_bytes" : 0,
+                      "type" : "memory"
+                    },
+                    "vertices" : [
+                      {
+                        "pipeline_ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                        "queue_push_duration_in_millis" : 0,
+                        "events_out" : 0,
+                        "id" : "8cae95fd7f24326d5954b70f0e76afbe4258b74a496b339584e0a9140fa9d8af"
+                      },
+                      {
+                        "cluster_uuid" : "wzZZ8VtWRdiMOn-5A6MB3w",
+                        "duration_in_millis" : 2119,
+                        "events_in" : 0,
+                        "events_out" : 0,
+                        "id" : "5fe9003da652eec1004264a01cdfd695c7027dbd2b8ec00557fa0ca6e5cde457",
+                        "pipeline_ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46"
+                      }
+                    ],
+                    "id" : "main",
+                    "hash" : "497eeb4a52e3555443decea67bf3898e44a7873ed581976b87c5532fdb9fa046",
+                    "ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                    "events" : {
+                      "duration_in_millis" : 0,
+                      "filtered" : 0,
+                      "in" : 0,
+                      "out" : 0,
+                      "queue_push_duration_in_millis" : 0
+                    }
+                  }
+                ],
+                "timestamp" : "2023-03-28T09:18:45.273Z"
+              }
+            },
+            "cluster" : {
+              "id" : "wzZZ8VtWRdiMOn-5A6MB3w"
+            },
+            "elasticsearch" : {
+              "cluster" : {
+                "id" : "wzZZ8VtWRdiMOn-5A6MB3w"
+              }
+            }
+          },
+          "service" : {
+            "version" : "8.6.1",
+            "address" : "http://logstash:9600/_node/stats",
+            "type" : "logstash",
+            "name" : "logstash",
+            "id" : "",
+            "hostname" : "49dc965d1ec6"
+          },
+          "event" : {
+            "dataset" : "logstash.node.stats",
+            "module" : "logstash",
+            "duration" : 44836209
+          },
+          "metricset" : {
+            "name" : "node_stats",
+            "period" : 10000
+          },
+          "agent" : {
+            "name" : "metricbeat",
+            "type" : "metricbeat",
+            "version" : "8.6.1",
+            "ephemeral_id" : "37639900-01b2-4668-b106-8eb83e6d039f",
+            "id" : "4d9a14e1-424e-4cf6-8c6c-8ebee35676da"
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "host" : {
+            "name" : "metricbeat"
+          }
+        }
+      },
+      {
+        "_index" : ".ds-.monitoring-logstash-8-mb-2023.03.27-000001",
+        "_id" : "25yoJ4cBooNEzMqNgAEC",
+        "_score" : 1.0,
+        "_source" : {
+          "@timestamp" : "2023-03-28T09:18:55.274Z",
+          "service" : {
+            "version" : "8.6.1",
+            "address" : "http://logstash:9600/_node/stats",
+            "type" : "logstash",
+            "name" : "logstash",
+            "id" : "",
+            "hostname" : "49dc965d1ec6"
+          },
+          "event" : {
+            "dataset" : "logstash.node.stats",
+            "module" : "logstash",
+            "duration" : 54567250
+          },
+          "metricset" : {
+            "name" : "node_stats",
+            "period" : 10000
+          },
+          "logstash" : {
+            "node" : {
+              "stats" : {
+                "events" : {
+                  "duration_in_millis" : 0,
+                  "in" : 0,
+                  "filtered" : 0,
+                  "out" : 0
+                },
+                "queue" : {
+                  "events_count" : 0
+                },
+                "logstash" : {
+                  "host" : "49dc965d1ec6",
+                  "http_address" : "0.0.0.0:9600",
+                  "pipeline" : {
+                    "batch_size" : 125,
+                    "workers" : 4
+                  },
+                  "ephemeral_id" : "d9f90778-a512-4175-b191-ebfa1e0e5632",
+                  "name" : "logstash",
+                  "version" : "8.6.1",
+                  "snapshot" : false,
+                  "status" : "green",
+                  "uuid" : "8c798c98-d617-4593-b6c9-a1dc91bf690c"
+                },
+                "timestamp" : "2023-03-28T09:18:55.327Z",
+                "jvm" : {
+                  "gc" : {
+                    "collectors" : {
+                      "old" : {
+                        "collection_count" : 0,
+                        "collection_time_in_millis" : 0
+                      },
+                      "young" : {
+                        "collection_count" : 119,
+                        "collection_time_in_millis" : 29193
+                      }
+                    }
+                  },
+                  "mem" : {
+                    "heap_max_in_bytes" : 2.68435454E8,
+                    "heap_used_in_bytes" : 1.50078608E8,
+                    "heap_used_percent" : 55
+                  },
+                  "uptime_in_millis" : 9613601.0
+                },
+                "reloads" : {
+                  "failures" : 0,
+                  "successes" : 0
+                },
+                "process" : {
+                  "open_file_descriptors" : 87,
+                  "max_file_descriptors" : 1048576.0,
+                  "cpu" : {
+                    "percent" : 0
+                  }
+                },
+                "os" : {
+                  "cgroup" : {
+                    "cpuacct" : {
+                      "control_group" : "/",
+                      "usage_nanos" : 1.697945566038E12
+                    },
+                    "cpu" : {
+                      "stat" : {
+                        "time_throttled_nanos" : 0,
+                        "number_of_elapsed_periods" : 0,
+                        "number_of_times_throttled" : 0
+                      },
+                      "control_group" : "/",
+                      "cfs_quota_micros" : -1
+                    }
+                  },
+                  "cpu" : {
+                    "percent" : 0,
+                    "load_average" : {
+                      "15m" : 22.04,
+                      "1m" : 26.81,
+                      "5m" : 27.46
+                    }
+                  }
+                },
+                "pipelines" : [
+                  {
+                    "vertices" : [
+                      {
+                        "events_out" : 0,
+                        "id" : "8cae95fd7f24326d5954b70f0e76afbe4258b74a496b339584e0a9140fa9d8af",
+                        "pipeline_ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                        "queue_push_duration_in_millis" : 0
+                      },
+                      {
+                        "duration_in_millis" : 2119,
+                        "events_in" : 0,
+                        "events_out" : 0,
+                        "id" : "5fe9003da652eec1004264a01cdfd695c7027dbd2b8ec00557fa0ca6e5cde457",
+                        "pipeline_ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                        "cluster_uuid" : "wzZZ8VtWRdiMOn-5A6MB3w"
+                      }
+                    ],
+                    "id" : "main",
+                    "hash" : "497eeb4a52e3555443decea67bf3898e44a7873ed581976b87c5532fdb9fa046",
+                    "ephemeral_id" : "a29c9855-03c1-48f1-b0d6-83e2d05e6d46",
+                    "events" : {
+                      "duration_in_millis" : 0,
+                      "filtered" : 0,
+                      "in" : 0,
+                      "out" : 0,
+                      "queue_push_duration_in_millis" : 0
+                    },
+                    "reloads" : {
+                      "successes" : 0,
+                      "failures" : 0
+                    },
+                    "queue" : {
+                      "type" : "memory",
+                      "events_count" : 0,
+                      "max_queue_size_in_bytes" : 0,
+                      "queue_size_in_bytes" : 0
+                    }
+                  }
+                ]
+              }
+            },
+            "cluster" : {
+              "id" : "wzZZ8VtWRdiMOn-5A6MB3w"
+            },
+            "elasticsearch" : {
+              "cluster" : {
+                "id" : "wzZZ8VtWRdiMOn-5A6MB3w"
+              }
+            }
+          },
+          "ecs" : {
+            "version" : "8.0.0"
+          },
+          "host" : {
+            "name" : "metricbeat"
+          },
+          "agent" : {
+            "type" : "metricbeat",
+            "version" : "8.6.1",
+            "ephemeral_id" : "37639900-01b2-4668-b106-8eb83e6d039f",
+            "id" : "4d9a14e1-424e-4cf6-8c6c-8ebee35676da",
+            "name" : "metricbeat"
+          }
+        }
+      }
+    ]
+  }
+}

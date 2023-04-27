@@ -1,0 +1,61 @@
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 3,
+      "relation" : "eq"
+    },
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : "orders",
+        "_id" : "orders_2",
+        "_score" : 1.0,
+        "_source" : {
+          "date_ordered" : "22.02.2022",
+          "married_to" : null,
+          "idorders" : 2,
+          "user_iduser" : 2,
+          "@timestamp" : "2023-04-01T14:15:00.617472422Z",
+          "total_sum" : 1400.0,
+          "@version" : "1"
+        }
+      },
+      {
+        "_index" : "orders",
+        "_id" : "orders_1",
+        "_score" : 1.0,
+        "_source" : {
+          "date_ordered" : "12.02.2021",
+          "married_to" : null,
+          "idorders" : 1,
+          "user_iduser" : 1,
+          "@timestamp" : "2023-04-01T14:15:00.617102963Z",
+          "total_sum" : 1200.0,
+          "@version" : "1"
+        }
+      },
+      {
+        "_index" : "orders",
+        "_id" : "orders_3",
+        "_score" : 1.0,
+        "_source" : {
+          "date_ordered" : "23.02.2022",
+          "married_to" : null,
+          "idorders" : 3,
+          "user_iduser" : 2,
+          "@timestamp" : "2023-04-01T14:50:00.210410546Z",
+          "total_sum" : 1400.0,
+          "@version" : "1"
+        }
+      }
+    ]
+  }
+}
