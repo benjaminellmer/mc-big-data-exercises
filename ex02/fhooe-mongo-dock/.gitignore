@@ -1,0 +1,4 @@
+mongoapp/*
+!.gitattributes
+!.gitignore
+!README.md

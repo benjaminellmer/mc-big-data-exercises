@@ -1,0 +1,47 @@
+version: '3.9'
+
+services:
+    mongo:
+        image: mongo
+        container_name: mongodb
+        volumes:
+            - mongodata:/data/db
+            - mongodata:/data/configdb
+        ports:
+            - "27017:27017"
+        restart: always
+    php-apache:
+        build:
+            dockerfile: Dockerfile-php
+        container_name: mongoapp
+        volumes:
+            - ./mongoapp:/var/www/html
+            - ./src/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+        # port 8084 has been chosen with consideration for https://github.com/Digital-Media/fhooe-web-dock,
+        # which may run in parallel.
+        depends_on:
+            - mongo
+        ports:
+            - "8084:80"
+            - "7444:443"
+        restart: always
+    mongo-express:
+        image: mongo-express
+        container_name: mongo-express
+        environment:
+            - ME_CONFIG_MONGODB_SERVER=mongo
+            - ME_CONFIG_MONGODB_PORT=27017
+            - ME_CONFIG_MONGODB_ENABLE_ADMIN=true
+            - ME_CONFIG_MONGODB_AUTH_DATABASE=admin
+        depends_on:
+            - mongo
+        ports:
+# port 8083 has been chosen with consideration for https://github.com/Digital-Media/fhooe-web-dock,
+# which may run in parallel.
+          - "8083:8081"
+        restart: always
+volumes:
+    mongodata:
+networks:
+    default:
+        name: mongonet
