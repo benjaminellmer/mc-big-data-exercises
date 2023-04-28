@@ -107,8 +107,17 @@ db.orders.find({})
 
 	\newpage
 	\section*{Step 2}
+	\subsection*{My Summary}
+	Map-reduce is a method of processing large volumes of data into useful aggregated results.
+	MongoDB has a mapReduce command that performs map-reduce operations.
+	In this process, MongoDB applies the map phase to each input document and emits key-value pairs, which are then condensed and aggregated using the reduce phase.
+	The results are stored in a collection, and may also pass through a finalize function for further processing.
+	Map-reduce functions in MongoDB are JavaScript-based and can perform arbitrary sorting and limiting before the map stage.
+	They can also use custom JavaScript functions to provide flexibility to the operation, and can write results to a collection or return them inline.
+	When writing to a collection, subsequent map-reduce operations can merge, replace or reduce new results with previous ones.
 
 	\newpage
+
 	\section*{Step 3}
 
 	\noindent \textbf{Get sum of total sums:}
@@ -193,6 +202,37 @@ db.orders.deleteMany({})
 db.dropDatabase()
 	\end{lstlisting}
 
+	\newpage
+
+	\section*{Step 6 - Work with MongoDB Altas Data API}
+	\noindent \textbf{Create Database Cluster} \\
+	\includegraphics[width=\textwidth]{images/sc01.png}
+	\includegraphics[width=\textwidth]{images/sc02.png}
+
+	\vspace{1cm}
+
+	\noindent \textbf{Enable and configure Data API} \\
+	\includegraphics[width=\textwidth]{images/sc03.png}
+
+	\newpage
+
+
+	\noindent \textbf{Create API Key} \\
+	\includegraphics[width=\textwidth]{images/sc04.png}
+
+	\noindent \textbf{Create Environment variables in .zshrc} \\
+	\includegraphics[width=\textwidth]{images/sc05.png}
+
+	\newpage
+
+	\noindent \textbf{Connect using mongo shell} \\
+	\includegraphics[width=\textwidth]{images/sc06.png}
+
+	\noindent \textbf{Create Database and Sample Data} \\
+	\includegraphics[width=0.9\textwidth]{images/sc07.png} \\
+	\includegraphics[width=0.9\textwidth]{images/sc08.png} 
+
+
 
 	%\noindent \textbf{The pipeline fails because data is already in use} \\
 	%\includegraphics[width=\textwidth]{images/sc01.png} 
@@ -201,9 +241,9 @@ db.dropDatabase()
 		%\item Import the json file using mongoimport
 	%\end{enumerate}
 
-	\newpage
+	%\newpage
 	
-	\section*{Appendix}
+	%\section*{Appendix}
 
 	%\subsection*{.env}
 	%\label{listings:envs}
