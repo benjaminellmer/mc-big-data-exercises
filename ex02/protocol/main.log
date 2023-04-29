@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.16)  28 APR 2023 19:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.16)  29 APR 2023 10:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -553,15 +553,43 @@ File: images/sc08.png Graphic file (type png)
 <use images/sc08.png>
 Package pdftex.def Info: images/sc08.png  used on input line 233.
 (pdftex.def)             Requested size: 386.99738pt x 286.10379pt.
- [8 <./images/sc06.png> <./images/sc07.png> <./images/sc08.png>] (./main.aux)
+ [8 <./images/sc06.png> <./images/sc07.png> <./images/sc08.png>]
+<images/sc09.png, id=146, 1519.6775pt x 245.91875pt>
+File: images/sc09.png Graphic file (type png)
+<use images/sc09.png>
+Package pdftex.def Info: images/sc09.png  used on input line 238.
+(pdftex.def)             Requested size: 430.0pt x 69.581pt.
+<images/sc10.png, id=147, 1521.685pt x 259.97125pt>
+File: images/sc10.png Graphic file (type png)
+<use images/sc10.png>
+Package pdftex.def Info: images/sc10.png  used on input line 241.
+(pdftex.def)             Requested size: 430.0pt x 73.46184pt.
+<images/sc11.png, id=148, 1068.99374pt x 223.83624pt>
+File: images/sc11.png Graphic file (type png)
+<use images/sc11.png>
+Package pdftex.def Info: images/sc11.png  used on input line 244.
+(pdftex.def)             Requested size: 430.0pt x 90.03839pt.
+<images/sc12.png, id=149, 1069.9975pt x 242.9075pt>
+File: images/sc12.png Graphic file (type png)
+<use images/sc12.png>
+Package pdftex.def Info: images/sc12.png  used on input line 247.
+(pdftex.def)             Requested size: 430.0pt x 97.61716pt.
+<images/sc13.png, id=150, 1069.9975pt x 208.78pt>
+File: images/sc13.png Graphic file (type png)
+<use images/sc13.png>
+Package pdftex.def Info: images/sc13.png  used on input line 250.
+(pdftex.def)             Requested size: 430.0pt x 83.90234pt.
+ [9 <./images/sc09.png> <./images/sc10.png> <./images/sc11.png> <./images/sc12.
+png> <./images/sc13.png>]
+(./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13916 strings out of 478994
- 219575 string characters out of 5858183
+ 13947 strings out of 478994
+ 220091 string characters out of 5858183
  654392 words of memory out of 5000000
- 31117 multiletter control sequences out of 15000+600000
+ 31142 multiletter control sequences out of 15000+600000
  459974 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,5n,75p,325b,1179s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -572,10 +600,10 @@ Here is how much of TeX's memory you used:
 b></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinBiolinumT
 B.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLiber
 tineMT.pfb>
-Output written on main.pdf (9 pages, 926344 bytes).
+Output written on main.pdf (10 pages, 1777108 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 146 compressed objects within 2 object streams
- 83 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 195 PDF objects out of 1000 (max. 8388607)
+ 149 compressed objects within 2 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
