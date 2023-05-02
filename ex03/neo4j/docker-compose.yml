@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+
+  db:
+    build:
+      dockerfile: Dockerfile-neo4j
+    container_name: neo4j
+    volumes:
+      - neo4jdata:/data
+      - neo4jlogs:/logs
+    # restart: always
+    environment:
+      NEO4J_AUTH: neo4j/password
+    ports:
+      - 7474:7474
+      - 7687:7687
+volumes:
+  neo4jdata:
+  neo4jlogs:
