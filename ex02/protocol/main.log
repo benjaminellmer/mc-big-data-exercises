@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.16)  29 APR 2023 10:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.16)  29 APR 2023 12:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -514,70 +514,70 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 <images/sc01.png, id=114, 1111.15125pt x 624.3325pt>
 File: images/sc01.png Graphic file (type png)
 <use images/sc01.png>
-Package pdftex.def Info: images/sc01.png  used on input line 209.
+Package pdftex.def Info: images/sc01.png  used on input line 214.
 (pdftex.def)             Requested size: 430.0pt x 241.61197pt.
 <images/sc02.png, id=116, 1186.4325pt x 353.32pt>
 File: images/sc02.png Graphic file (type png)
 <use images/sc02.png>
-Package pdftex.def Info: images/sc02.png  used on input line 210.
+Package pdftex.def Info: images/sc02.png  used on input line 215.
 (pdftex.def)             Requested size: 430.0pt x 128.0523pt.
 <images/sc03.png, id=117, 1532.72626pt x 299.1175pt>
 File: images/sc03.png Graphic file (type png)
 <use images/sc03.png>
-Package pdftex.def Info: images/sc03.png  used on input line 215.
+Package pdftex.def Info: images/sc03.png  used on input line 220.
 (pdftex.def)             Requested size: 430.0pt x 83.91206pt.
  [6 <./images/sc01.png> <./images/sc02.png> <./images/sc03.png>]
 <images/sc04.png, id=128, 558.085pt x 551.05875pt>
 File: images/sc04.png Graphic file (type png)
 <use images/sc04.png>
-Package pdftex.def Info: images/sc04.png  used on input line 221.
+Package pdftex.def Info: images/sc04.png  used on input line 226.
 (pdftex.def)             Requested size: 430.0pt x 424.59401pt.
 <images/sc05.png, id=129, 573.14125pt x 37.13875pt>
 File: images/sc05.png Graphic file (type png)
 <use images/sc05.png>
-Package pdftex.def Info: images/sc05.png  used on input line 224.
+Package pdftex.def Info: images/sc05.png  used on input line 229.
 (pdftex.def)             Requested size: 430.0pt x 27.86362pt.
  [7 <./images/sc04.png> <./images/sc05.png>]
 <images/sc06.png, id=136, 1133.23375pt x 179.67125pt>
 File: images/sc06.png Graphic file (type png)
 <use images/sc06.png>
-Package pdftex.def Info: images/sc06.png  used on input line 229.
+Package pdftex.def Info: images/sc06.png  used on input line 234.
 (pdftex.def)             Requested size: 430.0pt x 68.17433pt.
 <images/sc07.png, id=137, 600.2425pt x 245.91875pt>
 File: images/sc07.png Graphic file (type png)
 <use images/sc07.png>
-Package pdftex.def Info: images/sc07.png  used on input line 232.
+Package pdftex.def Info: images/sc07.png  used on input line 237.
 (pdftex.def)             Requested size: 386.99738pt x 158.5582pt.
 <images/sc08.png, id=138, 562.1pt x 415.5525pt>
 File: images/sc08.png Graphic file (type png)
 <use images/sc08.png>
-Package pdftex.def Info: images/sc08.png  used on input line 233.
+Package pdftex.def Info: images/sc08.png  used on input line 238.
 (pdftex.def)             Requested size: 386.99738pt x 286.10379pt.
  [8 <./images/sc06.png> <./images/sc07.png> <./images/sc08.png>]
 <images/sc09.png, id=146, 1519.6775pt x 245.91875pt>
 File: images/sc09.png Graphic file (type png)
 <use images/sc09.png>
-Package pdftex.def Info: images/sc09.png  used on input line 238.
+Package pdftex.def Info: images/sc09.png  used on input line 243.
 (pdftex.def)             Requested size: 430.0pt x 69.581pt.
 <images/sc10.png, id=147, 1521.685pt x 259.97125pt>
 File: images/sc10.png Graphic file (type png)
 <use images/sc10.png>
-Package pdftex.def Info: images/sc10.png  used on input line 241.
+Package pdftex.def Info: images/sc10.png  used on input line 246.
 (pdftex.def)             Requested size: 430.0pt x 73.46184pt.
 <images/sc11.png, id=148, 1068.99374pt x 223.83624pt>
 File: images/sc11.png Graphic file (type png)
 <use images/sc11.png>
-Package pdftex.def Info: images/sc11.png  used on input line 244.
+Package pdftex.def Info: images/sc11.png  used on input line 249.
 (pdftex.def)             Requested size: 430.0pt x 90.03839pt.
 <images/sc12.png, id=149, 1069.9975pt x 242.9075pt>
 File: images/sc12.png Graphic file (type png)
 <use images/sc12.png>
-Package pdftex.def Info: images/sc12.png  used on input line 247.
+Package pdftex.def Info: images/sc12.png  used on input line 252.
 (pdftex.def)             Requested size: 430.0pt x 97.61716pt.
 <images/sc13.png, id=150, 1069.9975pt x 208.78pt>
 File: images/sc13.png Graphic file (type png)
 <use images/sc13.png>
-Package pdftex.def Info: images/sc13.png  used on input line 250.
+Package pdftex.def Info: images/sc13.png  used on input line 255.
 (pdftex.def)             Requested size: 430.0pt x 83.90234pt.
  [9 <./images/sc09.png> <./images/sc10.png> <./images/sc11.png> <./images/sc12.
 png> <./images/sc13.png>]
