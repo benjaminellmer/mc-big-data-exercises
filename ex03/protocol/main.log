@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.16)  2 MAY 2023 19:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.16)  7 MAY 2023 13:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -362,17 +362,21 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@count@id=\count281
 \enitdp@description=\count282
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 66.
-Package hyperref Info: Option `linktocpage' set `true' on input line 66.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/preprint/fullpage.sty
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip54
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 68.
+Package hyperref Info: Option `linktocpage' set `true' on input line 68.
 LaTeX Font Info:    Trying to load font information for T1+LinuxBiolinumT-TLF o
-n input line 68.
+n input line 70.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
 File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/Lin
 uxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 68.
+(Font)              scaled to size 14.4pt on input line 70.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count283
@@ -380,24 +384,24 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
 
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -425,7 +429,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 68.
+Package hyperref Info: Link coloring ON on input line 70.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -439,9 +443,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count290
 )
-LaTeX Info: Redefining \ref on input line 68.
-LaTeX Info: Redefining \pageref on input line 68.
-LaTeX Info: Redefining \nameref on input line 68.
+LaTeX Info: Redefining \ref on input line 70.
+LaTeX Info: Redefining \pageref on input line 70.
+LaTeX Info: Redefining \nameref on input line 70.
  (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -462,34 +466,34 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 \c@mv@boldtabular=\count292
 \c@lstlisting=\count293
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/sc' will be
-(Font)              scaled to size 14.4pt on input line 71.
+(Font)              scaled to size 14.4pt on input line 73.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/sc' will be
-(Font)              scaled to size 24.88pt on input line 71.
+(Font)              scaled to size 24.88pt on input line 73.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 29.86pt on input line 73.
+(Font)              scaled to size 29.86pt on input line 75.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 29.86pt on input line 73.
+(Font)              scaled to size 29.86pt on input line 75.
 <images/logo.pdf, id=4, 269.93045pt x 269.93045pt>
 File: images/logo.pdf Graphic file (type pdf)
 <use images/logo.pdf>
-Package pdftex.def Info: images/logo.pdf  used on input line 78.
-(pdftex.def)             Requested size: 177.6018pt x 177.60684pt.
+Package pdftex.def Info: images/logo.pdf  used on input line 80.
+(pdftex.def)             Requested size: 201.1541pt x 201.15816pt.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 80.
+(Font)              scaled to size 17.28pt on input line 82.
  [1
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
 s/logo.pdf>]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 20.74pt on input line 86.
+(Font)              scaled to size 20.74pt on input line 88.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 20.74pt on input line 86.
+(Font)              scaled to size 20.74pt on input line 88.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 87.
+(Font)              scaled to size 14.4pt on input line 89.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 88.
+(Font)              scaled to size 12.0pt on input line 90.
 LaTeX Font Info:    Trying to load font information for T1+LinuxLibertineMonoT-
-TLF on input line 88.
+TLF on input line 90.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/libertine/T1LinuxLibertineMonoT-T
 LF.fd
@@ -499,28 +503,45 @@ File: T1LinuxLibertineMonoT-TLF.fd 2019/05/20 (autoinst) Font definitions for T
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <12> no
 t available
 (Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
-tead on input line 88.
+tead on input line 90.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
-(Font)              scaled to size 12.0pt on input line 88.
+(Font)              scaled to size 12.0pt on input line 90.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130 	\begin{lstlisting}[style=sql]
-                                     [1] [2] [3] (./main.aux)
+l.126 	\newpage
+                [1] [2] [3] [4] [5]
+<images/sc01.png, id=168, 955.57pt x 460.72125pt>
+File: images/sc01.png Graphic file (type png)
+<use images/sc01.png>
+Package pdftex.def Info: images/sc01.png  used on input line 270.
+(pdftex.def)             Requested size: 452.9679pt x 218.39494pt.
+<images/sc02.png, id=170, 825.0825pt x 192.72pt>
+File: images/sc02.png Graphic file (type png)
+<use images/sc02.png>
+Package pdftex.def Info: images/sc02.png  used on input line 276.
+(pdftex.def)             Requested size: 452.9679pt x 105.80223pt.
+<images/sc03.png, id=171, 819.06pt x 177.66376pt>
+File: images/sc03.png Graphic file (type png)
+<use images/sc03.png>
+Package pdftex.def Info: images/sc03.png  used on input line 282.
+(pdftex.def)             Requested size: 452.9679pt x 98.25484pt.
+ [6 <./images/sc01.png> <./images/sc02.png> <./images/sc03.png>] [7] (./main.au
+x)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14097 strings out of 478994
- 221550 string characters out of 5858183
- 953797 words of memory out of 5000000
- 31300 multiletter control sequences out of 15000+600000
+ 14218 strings out of 478994
+ 223330 string characters out of 5858183
+ 1183843 words of memory out of 5000000
+ 31358 multiletter control sequences out of 15000+600000
  454726 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,6n,97p,325b,1431s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,5n,97p,325b,1431s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_dhi6qf.enc
 }{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_omcwp2.enc}<
@@ -528,10 +549,10 @@ Here is how much of TeX's memory you used:
 b></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinBiolinumT
 B.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLiber
 tineMT.pfb>
-Output written on main.pdf (4 pages, 148337 bytes).
+Output written on main.pdf (8 pages, 720387 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
- 87 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 239 PDF objects out of 1000 (max. 8388607)
+ 214 compressed objects within 3 object streams
+ 142 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

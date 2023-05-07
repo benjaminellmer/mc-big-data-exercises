@@ -9,6 +9,8 @@
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{enumitem}
+\usepackage{fullpage}
+
 \renewcommand{\thesection}{\arabic{section}}
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -96,6 +98,11 @@ docker run --name postgres-big-data-ex4 -e POSTGRES_PASSWORD=geheim -d postgres:
 	\end{lstlisting}
 
 	\section*{Step 1 - Translation}
+	\noindent \textbf{Connect to postgres container}
+	\begin{lstlisting}[style=sql]
+docker exec -it postgres-big-data-ex4 psql -U postgres
+	\end{lstlisting}
+
 	\noindent \textbf{Drop, create and select schema:}
 	\begin{lstlisting}[style=sql]
 DROP SCHEMA IF EXISTS graph_demos CASCADE;
@@ -116,6 +123,8 @@ CREATE TABLE IF NOT EXISTS folks (
 );
 	\end{lstlisting}
 
+	\newpage
+	
 	\noindent \textbf{Insert folks:}
 	\begin{lstlisting}[style=sql]
 INSERT INTO folks (id, name, father, mother) VALUES
@@ -194,6 +203,91 @@ INSERT INTO edges (edge_id, tail_vertex, head_vertex, label) VALUES
 (15, 12, 13, 'married'),
 (16, 13, 12, 'married');
 	\end{lstlisting}
+
+	\pagebreak
+
+	\section*{Step 2}
+	\noindent \textbf{Connect to neo4j container:}
+	\begin{lstlisting}[style=sql]
+docker exec -it neo4j cypher-shell -u neo4j -p password
+	\end{lstlisting}
+
+	\noindent \textbf{Create Folks:}
+	\begin{lstlisting}[style=sql]
+CREATE (n:Folk {id: 100, name: 'Alex'});
+CREATE (n:Folk {id: 20, name: 'Dad'});
+CREATE (n:Folk {id: 30, name: 'Mom'});
+CREATE (n:Folk {id: 10, name: 'Grandpa Bill'});
+CREATE (n:Folk {id: 98, name: 'Sister Amy'});
+	\end{lstlisting}
+
+	\noindent \textbf{Create Vertices:}
+	\begin{lstlisting}[style=sql]
+CREATE (n:Location {vertex_id: 1, alias: 'NAmerica', label: 'Location', name: 'North America', type: 'continent'});
+CREATE (n:Location {vertex_id: 2, alias: 'Europe', label: 'Location', name: 'Europe', type: 'continent'});
+CREATE (n:Location {vertex_id: 3, alias: 'USA', label: 'Location', name: 'United States', type: 'country'});
+CREATE (n:Location {vertex_id: 4, alias: 'UK', label: 'Location', name: 'United Kingdom', type: 'country'});
+CREATE (n:Location {vertex_id: 5, alias: 'England', label: 'Location', name: 'England', type: 'country'});
+CREATE (n:Location {vertex_id: 6, alias: 'Austria', label: 'Location', name: 'Österreich', type: 'country'});
+CREATE (n:Location {vertex_id: 7, alias: 'Idaho', label: 'Location', name: 'Idaho', type: 'state'});
+CREATE (n:Location {vertex_id: 8, alias: 'London', label: 'Location', name: 'London', type: 'city'});
+CREATE (n:Location {vertex_id: 9, alias: 'UpperAustria', label: 'Location', name: 'Oberösterreich', type: 'Bundesland'});
+CREATE (n:Location {vertex_id: 10, alias: 'Waldviertel', label: 'Location', name: 'Waldviertel', type: 'Viertel'});
+CREATE (n:Location {vertex_id: 11, alias: 'Grein', label: 'Location', name: 'Grein', type: 'city'});
+CREATE (n:Person {vertex_id: 12, alias: 'Andrea', label: 'Person', name: 'Andrea', type: 'person'});
+CREATE (n:Person {vertex_id: 13, alias: 'Bert', label: 'Person', name: 'Bert', type: 'person'});
+CREATE (n:Person {vertex_id: 14, alias: 'Christian', label: 'Person', name: 'Christian', type: 'person'});
+	\end{lstlisting}
+
+	\pagebreak
+
+	\noindent \textbf{Create Edges:}
+	\begin{lstlisting}[style=sql]
+MATCH (tail:Location {vertex_id: 3}), (head:Location {vertex_id: 1}) CREATE (tail)-[:WITHIN]->(head);
+MATCH (tail:Location {vertex_id: 4}), (head:Location {vertex_id: 2}) CREATE (tail)-[:WITHIN]->(head);
+MATCH (tail:Location {vertex_id: 5}), (head:Location {vertex_id: 4}) CREATE (tail)-[:WITHIN]->(head);
+MATCH (tail:Location {vertex_id: 6}), (head:Location {vertex_id: 2}) CREATE (tail)-[:WITHIN]->(head);
+MATCH (tail:Location {vertex_id: 7}), (head:Location {vertex_id: 3}) CREATE (tail)-[:WITHIN]->(head);
+MATCH (tail:Location {vertex_id: 8}), (head:Location {vertex_id: 5}) CREATE (tail)-[:WITHIN]->(head);
+MATCH (tail:Location {vertex_id: 9}), (head:Location {vertex_id: 6}) CREATE (tail)-[:WITHIN]->(head);
+MATCH (tail:Location {vertex_id: 10}), (head:Location {vertex_id: 9}) CREATE (tail)-[:WITHIN]->(head);
+MATCH (tail:Location {vertex_id: 11}), (head:Location {vertex_id: 10}) CREATE (tail)-[:WITHIN]->(head);
+MATCH (tail:Person {vertex_id: 12}), (head:Location {vertex_id: 7}) CREATE (tail)-[:BORN_IN]->(head);
+MATCH (tail:Person {vertex_id: 12}), (head:Location {vertex_id: 8}) CREATE (tail)-[:LIVES_IN]->(head);
+MATCH (tail:Person {vertex_id: 13}), (head:Location {vertex_id: 11}) CREATE (tail)-[:BORN_IN]->(head);
+MATCH (tail:Person {vertex_id: 13}), (head:Location {vertex_id: 8}) CREATE (tail)-[:LIVES_IN]->(head);
+MATCH (tail:Person {vertex_id: 14}), (head:Location {vertex_id: 8}) CREATE (tail)-[:BORN_IN]->(head);
+MATCH (tail:Person {vertex_id: 12}), (head:Person {vertex_id: 13}) CREATE (tail)-[:MARRIED]->(head);
+MATCH (tail:Person {vertex_id: 13}), (head:Person {vertex_id: 12}) CREATE (tail)-[:MARRIED]->(head);
+	\end{lstlisting}
+
+	\pagebreak
+
+	\noindent \textbf{Show the whole graph:}
+	\begin{lstlisting}[style=sql]
+MATCH (n) RETURN n;
+	\end{lstlisting}
+	\includegraphics[width=\textwidth]{images/sc01.png}
+
+	\noindent \textbf{Read all :Person nodes:}
+	\begin{lstlisting}[style=sql]
+MATCH (p:Person) RETURN p;
+	\end{lstlisting}
+	\includegraphics[width=\textwidth]{images/sc02.png}
+
+	\noindent \textbf{Return all names of :Person nodes:}
+	\begin{lstlisting}[style=sql]
+MATCH (p:Person) RETURN p.name;
+	\end{lstlisting}
+	\includegraphics[width=\textwidth]{images/sc03.png}
+
+	\pagebreak
+
+	\noindent \textbf{Create a new Person - Grandma Mary:}
+	\begin{lstlisting}[style=sql]
+CREATE (p:Person {name: "Grandma Mary"});
+	\end{lstlisting}
+
 
 	%\noindent \textbf{Create API Key} \\
 	%\includegraphics[width=\textwidth]{images/sc04.png}
