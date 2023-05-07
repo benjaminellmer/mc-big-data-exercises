@@ -409,5 +409,16 @@ RETURN DISTINCT ancestor as ancestortree;
 	%\label{listings:envs}
 	%\lstinputlisting[style=json]{.env}
 
-\end{document}
+	\pagebreak
 
+	\section*{Step 3:}
+	\begin{lstlisting}[style=sql]
+MATCH
+(person)-[:BORN_IN]->()-[:WITHIN*0..]->(us:Location {name:'United States'}),
+(person)-[:LIVES_IN]->()-[:WITHIN*0..]->(eu:Location {name:'Europe'})
+WHERE person.label = 'Person'
+RETURN person AS relevantPersons;
+	\end{lstlisting}
+	\includegraphics[width=\textwidth]{images/sc-step3.png}
+
+\end{document}
