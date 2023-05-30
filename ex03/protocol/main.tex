@@ -391,6 +391,66 @@ RETURN DISTINCT ancestor as ancestortree;
 	\end{lstlisting}
 	\includegraphics[width=\textwidth]{images/sc06.png}
 
+	\pagebreak
+
+	\subsection*{Add properties to nodes and eges}
+	\noindent \textbf{Married properties:}
+	\begin{lstlisting}[style=sql]
+MATCH (mom:Folk {name: 'Mom'})
+MATCH (dad:Folk {name: 'Dad'})
+
+MATCH (grandpaJim:Folk {name: 'Grandpa Jim'})
+MATCH (grandmaMary:Folk {name: 'Grandma Mary'})
+
+MATCH (mom)-[momMarriedDad:MARRIED]->(dad)
+MATCH (dad)-[dadMarriedMom:MARRIED]->(mom)
+MATCH (grandpaJim)-[jimMarriedMary:MARRIED]->(grandmaMary)
+MATCH (grandmaMary)-[maryMarriedJim]->(grandpaJim)
+
+SET momMarriedDad.year = '2000'
+SET dadMarriedMom.year = '2000'
+SET jimMarriedMary.year = '1970'
+SET maryMarriedJim.year = '1970';
+	\end{lstlisting}
+
+	\noindent \textbf{Born Year:}
+	\begin{lstlisting}[style=sql]
+MATCH (alex:Folk {name: 'Alex'})
+MATCH (amy:Folk {name: 'Sister Amy'})
+
+MATCH (mom:Folk {name: 'Mom'})
+MATCH (dad:Folk {name: 'Dad'})
+
+MATCH (grandpaJim:Folk {name: 'Grandpa Jim'})
+MATCH (grandmaMary:Folk {name: 'Grandma Mary'})
+
+SET alex.born_year = '2002'
+SET amy.born_year = '2005'
+
+SET mom.born_year = '1980'
+SET dad.born_year = '1985'
+
+SET grandpaJim.born_year = '1950'
+SET grandmaMary.born_year = '1947';
+	\end{lstlisting}
+
+	\pagebreak
+
+	\noindent \textbf{Ancestor tree of persons born in year:}
+	\begin{lstlisting}[style=sql]
+MATCH (person:Folk)
+WHERE person.born_year = '2002'
+MATCH (ancestor)-[*]->(person)
+RETURN DISTINCT ancestor as ancestortree;
+	\end{lstlisting}
+
+	\noindent \textbf{Find Persons married in a particular year:}
+	\begin{lstlisting}[style=sql]
+MATCH (person:Folk)-[marriage:MARRIED]->(other:Folk)
+WHERE marriage.year = '2000'
+RETURN person, other;
+	\end{lstlisting}
+
 	%\noindent \textbf{Create API Key} \\
 	%\includegraphics[width=\textwidth]{images/sc04.png}
 
@@ -409,7 +469,7 @@ RETURN DISTINCT ancestor as ancestortree;
 	%\label{listings:envs}
 	%\lstinputlisting[style=json]{.env}
 
-	\pagebreak
+	%\pagebreak
 
 	\section*{Step 3:}
 	\begin{lstlisting}[style=sql]
