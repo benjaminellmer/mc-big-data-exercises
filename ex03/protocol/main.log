@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.16)  18 MAY 2023 21:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.16)  30 MAY 2023 18:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -528,27 +528,33 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 <to be read again> 
                    \relax 
 l.130 	\newpage
-                [1] [2] [3] [4] [5]
-<images/sc01.png, id=169, 845.1575pt x 462.72874pt>
-File: images/sc01.png Graphic file (type png)
-<use images/sc01.png>
-Package pdftex.def Info: images/sc01.png  used on input line 295.
-(pdftex.def)             Requested size: 452.9679pt x 248.00578pt.
- [6 <./images/sc01.png>]
-<images/sc02.png, id=198, 825.0825pt x 192.72pt>
+                [1] [2] [3]
+<images/folks.png, id=119, 311.1625pt x 433.62pt>
+File: images/folks.png Graphic file (type png)
+<use images/folks.png>
+Package pdftex.def Info: images/folks.png  used on input line 240.
+(pdftex.def)             Requested size: 183.76471pt x 256.0748pt.
+ [4 <./images/folks.png>] [5] [6]
+<images/whole graph.png, id=196, 1344.02126pt x 1011.78pt>
+File: images/whole graph.png Graphic file (type png)
+<use images/whole graph.png>
+Package pdftex.def Info: images/whole graph.png  used on input line 300.
+(pdftex.def)             Requested size: 452.9679pt x 340.99014pt.
+<images/sc02.png, id=197, 825.0825pt x 192.72pt>
 File: images/sc02.png Graphic file (type png)
 <use images/sc02.png>
-Package pdftex.def Info: images/sc02.png  used on input line 303.
+Package pdftex.def Info: images/sc02.png  used on input line 306.
 (pdftex.def)             Requested size: 452.9679pt x 105.80223pt.
-<images/sc03.png, id=199, 819.06pt x 177.66376pt>
+ [7 <./images/whole graph.png> <./images/sc02.png>]
+<images/sc03.png, id=208, 819.06pt x 177.66376pt>
 File: images/sc03.png Graphic file (type png)
 <use images/sc03.png>
-Package pdftex.def Info: images/sc03.png  used on input line 309.
+Package pdftex.def Info: images/sc03.png  used on input line 314.
 (pdftex.def)             Requested size: 452.9679pt x 98.25484pt.
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <7> on input line 316.
+(Font)              <7> on input line 321.
 LaTeX Font Info:    Trying to load font information for T1+LinuxLibertineT-TLF 
-on input line 316.
+on input line 321.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/libertine/T1LinuxLibertineT-TLF.f
 d
@@ -556,50 +562,61 @@ File: T1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/Li
 nuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 316.
- [7 <./images/sc02.png> <./images/sc03.png>]
-<images/sc04.png, id=222, 718.685pt x 240.9pt>
+(Font)              scaled to size 14.4pt on input line 321.
+ [8 <./images/sc03.png>]
+<images/sc04.png, id=228, 718.685pt x 240.9pt>
 File: images/sc04.png Graphic file (type png)
 <use images/sc04.png>
-Package pdftex.def Info: images/sc04.png  used on input line 339.
+Package pdftex.def Info: images/sc04.png  used on input line 344.
 (pdftex.def)             Requested size: 452.9679pt x 151.83763pt.
-<images/sc05.png, id=223, 709.65125pt x 240.9pt>
+<images/sc05.png, id=229, 709.65125pt x 240.9pt>
 File: images/sc05.png Graphic file (type png)
 <use images/sc05.png>
-Package pdftex.def Info: images/sc05.png  used on input line 347.
+Package pdftex.def Info: images/sc05.png  used on input line 352.
 (pdftex.def)             Requested size: 452.9679pt x 153.76744pt.
- [8 <./images/sc04.png> <./images/sc05.png>]
-<images/sc06.png, id=247, 805.0075pt x 240.9pt>
-File: images/sc06.png Graphic file (type png)
-<use images/sc06.png>
-Package pdftex.def Info: images/sc06.png  used on input line 369.
-(pdftex.def)             Requested size: 452.9679pt x 135.55002pt.
-File: images/sc06.png Graphic file (type png)
-<use images/sc06.png>
-Package pdftex.def Info: images/sc06.png  used on input line 392.
-(pdftex.def)             Requested size: 452.9679pt x 135.55002pt.
- [9 <./images/sc06.png>]
+ [9 <./images/sc04.png> <./images/sc05.png>]
+<images/at_jim.png, id=253, 331.2375pt x 419.5675pt>
+File: images/at_jim.png Graphic file (type png)
+<use images/at_jim.png>
+Package pdftex.def Info: images/at_jim.png  used on input line 375.
+(pdftex.def)             Requested size: 112.31094pt x 142.26378pt.
+<images/at_jim_2.png, id=254, 392.46625pt x 379.4175pt>
+File: images/at_jim_2.png Graphic file (type png)
+<use images/at_jim_2.png>
+Package pdftex.def Info: images/at_jim_2.png  used on input line 401.
+(pdftex.def)             Requested size: 147.15651pt x 142.26378pt.
+ [10 <./images/at_jim.png> <./images/at_jim_2.png>]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 396.
- [10]
-<images/sc-step3.png, id=312, 731.73375pt x 221.82875pt>
+(Font)              scaled to size 17.28pt on input line 406.
+ [11]
+<images/at_2002.png, id=321, 626.34pt x 463.7325pt>
+File: images/at_2002.png Graphic file (type png)
+<use images/at_2002.png>
+Package pdftex.def Info: images/at_2002.png  used on input line 457.
+(pdftex.def)             Requested size: 192.14682pt x 142.26378pt.
+<images/sc-step3.png, id=322, 731.73375pt x 221.82875pt>
 File: images/sc-step3.png Graphic file (type png)
 <use images/sc-step3.png>
-Package pdftex.def Info: images/sc-step3.png  used on input line 482.
+Package pdftex.def Info: images/sc-step3.png  used on input line 495.
 (pdftex.def)             Requested size: 452.9679pt x 137.31914pt.
- [11 <./images/sc-step3.png>]
-(./main.aux)
+ [12 <./images/at_2002.png> <./images/sc-step3.png>] [13]
+<images/cats.png, id=387, 1057.9525pt x 756.8275pt>
+File: images/cats.png Graphic file (type png)
+<use images/cats.png>
+Package pdftex.def Info: images/cats.png  used on input line 565.
+(pdftex.def)             Requested size: 362.37569pt x 259.23495pt.
+ [14 <./images/cats.png>] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14576 strings out of 478994
- 229228 string characters out of 5858183
- 1036743 words of memory out of 5000000
- 31576 multiletter control sequences out of 15000+600000
+ 14692 strings out of 478994
+ 231012 string characters out of 5858183
+ 1037743 words of memory out of 5000000
+ 31623 multiletter control sequences out of 15000+600000
  466401 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,12n,97p,325b,1431s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,12n,97p,325b,1992s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc
 }{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_dhi6qf.enc}
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{
@@ -611,10 +628,10 @@ ineMT.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinL
 ibertineTB.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/l
 atxfont/line10.pfb>
-Output written on main.pdf (12 pages, 1256419 bytes).
+Output written on main.pdf (15 pages, 1016211 bytes).
 PDF statistics:
- 417 PDF objects out of 1000 (max. 8388607)
- 376 compressed objects within 4 object streams
- 260 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 514 PDF objects out of 1000 (max. 8388607)
+ 461 compressed objects within 5 object streams
+ 325 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

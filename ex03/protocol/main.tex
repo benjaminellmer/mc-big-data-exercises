@@ -236,6 +236,10 @@ CREATE (amy)-[:SISTER]->(alex)
 CREATE (grandpa)-[:FATHER]->(dad);
 	\end{lstlisting}
 
+	\begin{center}
+		\includegraphics[height=9cm]{images/folks.png}
+	\end{center}
+
 	\pagebreak
 
 	\noindent \textbf{Create Locations with relationships:}
@@ -287,20 +291,21 @@ CREATE (andrea)-[:MARRIED]->(bert)
 CREATE (bert)-[:MARRIED]->(andrea);
 	\end{lstlisting}
 
+	\pagebreak
 
 	\noindent \textbf{Show the whole graph:}
 	\begin{lstlisting}[style=sql]
-MATCH (n) RETURN n;
+MATCH (n) OPTIONAL MATCH (n)-[r]-() RETURN n, r;
 	\end{lstlisting}
-	\includegraphics[width=\textwidth]{images/sc01.png}
-
-	\pagebreak
+	\includegraphics[width=\textwidth]{images/whole graph.png}
 
 	\noindent \textbf{Read all :Person nodes:}
 	\begin{lstlisting}[style=sql]
 MATCH (p:Person) RETURN p;
 	\end{lstlisting}
 	\includegraphics[width=\textwidth]{images/sc02.png}
+
+	\pagebreak
 
 	\noindent \textbf{Return all names of :Person nodes:}
 	\begin{lstlisting}[style=sql]
@@ -363,10 +368,12 @@ CREATE (grandpajim)-[:FATHER]->(dad);
 	\noindent \textbf{Get the ancestor tree of Grandpa Jim:}
 	\begin{lstlisting}[style=sql]
 MATCH (grandpaJim:Folk {name: 'Grandpa Jim'})
-MATCH (grandpaJim)-[*]->(ancestor)
-RETURN DISTINCT ancestor as ancestortree;
+MATCH path=(grandpaJim)-[*]->(ancestor)
+RETURN DISTINCT ancestor as ancestortree, path;
 	\end{lstlisting}
-	\includegraphics[width=\textwidth]{images/sc06.png}
+	\begin{center}
+		\includegraphics[height=5cm]{images/at_jim.png}
+	\end{center}
 
 	\noindent \textbf{Marry Mom with Dad and Grandma with Grandpa:}
 	\begin{lstlisting}[style=sql]
@@ -383,13 +390,16 @@ CREATE (grandpaJim)-[:MARRIED]->(grandmaMary)
 CREATE (grandmaMary)-[:MARRIED]->(grandpaJim);
 	\end{lstlisting}
 
-	\noindent \textbf{Get the ancestor tree of Grandpa without the married persons:}
+	\noindent \textbf{Get the ancestor tree of Grandpa Jim without the married edges}
 	\begin{lstlisting}[style=sql]
 MATCH (grandpaJim:Folk {name: 'Grandpa Jim'})
-MATCH (grandpaJim)-[:MOTHER|FATHER*]->(ancestor:Folk)
-RETURN DISTINCT ancestor as ancestortree;
+MATCH path=(grandpaJim)-[*]->(ancestor)
+WHERE NONE(rel IN relationships(path) WHERE type(rel) = 'MARRIED')
+RETURN DISTINCT ancestor AS ancestortree, path;
 	\end{lstlisting}
-	\includegraphics[width=\textwidth]{images/sc06.png}
+	\begin{center}
+		\includegraphics[height=5cm]{images/at_jim_2.png}
+	\end{center}
 
 	\pagebreak
 
@@ -440,9 +450,12 @@ SET grandmaMary.born_year = '1947';
 	\begin{lstlisting}[style=sql]
 MATCH (person:Folk)
 WHERE person.born_year = '2002'
-MATCH (ancestor)-[*]->(person)
-RETURN DISTINCT ancestor as ancestortree;
+MATCH path=(ancestor)-[*]->(person)
+RETURN DISTINCT ancestor as ancestortree, path;
 	\end{lstlisting}
+	\begin{center}
+	\includegraphics[height=5cm]{images/at_2002.png}
+	\end{center}
 
 	\noindent \textbf{Find Persons married in a particular year:}
 	\begin{lstlisting}[style=sql]
@@ -481,4 +494,74 @@ RETURN person AS relevantPersons;
 	\end{lstlisting}
 	\includegraphics[width=\textwidth]{images/sc-step3.png}
 
+	\newpage
+	
+	\section*{Step 4:}
+	Since I am a cat fan, and because the names are funny I used the ancestor tree of my cat including the breeder and the new cat holder.
+
+	\begin{lstlisting}[style=sql]
+CREATE (lilly:Cat {name: 'Lilly', year_of_birth: '2022', gender: 'female'})
+CREATE (lennox:Cat {name: 'Lennox', year_of_birth: '2022', gender: 'male'})
+CREATE (lakota:Cat {name: 'Lakota', year_of_birth: '2022', gender: 'male'})
+
+CREATE (nikanor:Cat {name: 'Nikanor Laminur', year_of_birth: '2020', gender: 'male'})
+CREATE (fibi:Cat {name: 'Fibi Tandillo', year_of_birth: '2020', gender: 'female'})
+
+CREATE (bc:Cat {name: 'Benjamin Chemchug', year_of_birth: '2016', gender: 'male'})
+CREATE (dt:Cat {name: 'Dashutka Tale', year_of_birth: '2016', gender: 'female'})
+
+CREATE (mk:Cat {name: 'Mozart Kocilandia', year_of_birth: '2014', gender: 'male'})
+CREATE (nm:Cat {name: 'Naomi Mizar', year_of_birth: '2016', gender: 'female'})
+
+CREATE (benjamin:Person {name: 'Benjamin'})
+CREATE (iris:Person {name: 'Iris'})
+
+CREATE (rpp:Breeder {name: 'Royal Pink Paws'})
+
+CREATE (tieber:Family {name: 'Fam. Tieber'})
+CREATE (wurm:Family {name: 'Fam. Wurm'})
+
+CREATE (lilly)-[:SISTER]->(lennox)
+CREATE (lilly)-[:SISTER]->(lakota)
+
+CREATE (lennox)-[:BROTHER]->(lilly)
+CREATE (lennox)-[:BROTHER]->(lakota)
+
+CREATE (lakota)-[:BROTHER]->(lilly)
+CREATE (lakota)-[:BROTHER]->(lennox)
+
+CREATE (nikanor)-[:FATHER]->(lilly)
+CREATE (nikanor)-[:FATHER]->(lennox)
+CREATE (nikanor)-[:FATHER]->(lakota)
+
+CREATE (fibi)-[:MOTHER]->(lilly)
+CREATE (fibi)-[:MOTHER]->(lennox)
+CREATE (fibi)-[:MOTHER]->(lakota)
+
+CREATE (bc)-[:FATHER]->(nikanor)
+CREATE (dt)-[:MOTHER]->(nikanor)
+
+CREATE (mk)-[:FATHER]->(fibi)
+CREATE (nm)-[:MOTHER]->(fibi)
+
+CREATE (rpp)-[:BREEDER]->(lilly)
+CREATE (rpp)-[:BREEDER]->(lennox)
+CREATE (rpp)-[:BREEDER]->(lakota)
+
+CREATE (benjamin)-[:BOYFRIEND]->(iris)
+CREATE (iris)-[:GIRLFRIEND]->(benjamin)
+
+CREATE (benjamin)-[:HOLDER]->(lilly)
+CREATE (iris)-[:HOLDER]->(lilly)
+
+CREATE (rpp)-[:HOLDER]->(nikanor)
+CREATE (rpp)-[:HOLDER]->(fibi)
+
+CREATE (tieber)-[:HOLDER]->(lennox)
+CREATE (wurm)-[:HOLDER]->(lakota);
+	\end{lstlisting}
+
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{images/cats.png}
+	\end{center}
 \end{document}
